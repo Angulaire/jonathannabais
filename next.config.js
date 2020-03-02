@@ -41,11 +41,7 @@ module.exports = withLess(withFonts(withImages({
     return config
   },
   env: {
-    APPBASE_APP_ID: process.env.APPBASE_APP_ID,
-    APPBASE_API_URL: process.env.APPBASE_API_URL,
-    APPBASE_API_KEY: process.env.APPBASE_API_KEY,
     API_BASE_URL: process.env.API_BASE_URL,
-    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
     CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
   }
 })))

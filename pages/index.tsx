@@ -15,16 +15,15 @@ class IndexPage extends React.Component<IndexPageProps> {
     const { isAuthenticated } = this.props;
     return (
       <>
-        <Header afterScroll isAuthenticated={isAuthenticated}/>
+        <Header afterScroll/>
         <Hero
           title="Trouvez le job que vous méritez"
           description="Bienvenue sur la démonstration des sites carrières que nous construisons pour nos clients. C'est l'occasion pour vous de tester le moteur en direct, et de découvrir le blog avec les landings."
         />
-        <HeroSearch />
         <Footer />
       </>
     )
   }
   
 }
-export default defaultPage(IndexPage)
+export default IndexPage
