@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/navigation/Header';
 import Footer from '../components/navigation/Footer';
-import Hero from '@bit/helmut.helmut-design.section.hero';
+import Hero from '../components/section/Hero';
 
 interface IndexPageProps {
   isAuthenticated: boolean;

@@ -1061,7 +1061,7 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bit/helmut.helmut-design.section.hero@^0.0.2":
+"@bit/helmut.helmut-design.section.hero@0.0.2":
   version "0.0.2"
   resolved "https://node.bit.dev/helmut.helmut-design.section.hero/-/helmut.helmut-design.section.hero-0.0.2.tgz#e357a5885f0e7e8243f53a13fe15307c0b49bcc4"
   integrity sha1-41eliF8OfoJD9ToT/hUwfAtJvMQ=
