@@ -1,9 +1,7 @@
 import React from 'react';
 import Header from '../components/navigation/Header';
 import Footer from '../components/navigation/Footer';
-import Hero from '../components/section/Hero';
-import HeroSearch from '../components/section/HeroSearch';
-import defaultPage from '../hocs/defaultPage'
+import Hero from '@bit/helmut.helmut-design.section.hero';
 
 interface IndexPageProps {
   isAuthenticated: boolean;
@@ -12,7 +10,6 @@ interface IndexPageProps {
 class IndexPage extends React.Component<IndexPageProps> {
 
   render() {
-    const { isAuthenticated } = this.props;
     return (
       <>
         <Header afterScroll/>

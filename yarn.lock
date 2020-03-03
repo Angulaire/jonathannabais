@@ -1061,6 +1061,15 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@bit/helmut.helmut-design.section.hero@^0.0.2":
+  version "0.0.2"
+  resolved "https://node.bit.dev/helmut.helmut-design.section.hero/-/helmut.helmut-design.section.hero-0.0.2.tgz#e357a5885f0e7e8243f53a13fe15307c0b49bcc4"
+  integrity sha1-41eliF8OfoJD9ToT/hUwfAtJvMQ=
+  dependencies:
+    "@types/node" "^12.12.17"
+    antd "^3.9.2"
+    styled-components "5.0.1"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
