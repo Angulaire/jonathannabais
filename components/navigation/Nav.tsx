@@ -4,20 +4,7 @@ import Link from "next/link"
 import styled from 'styled-components'
 
 const NavGroup = styled.nav`
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-
-  @media (min-width: 768px) { 
-    padding: 0px 80px;
-  }
+  justify-content: right;
   
 `
 
