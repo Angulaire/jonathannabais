@@ -14,10 +14,6 @@ const NavGroup = styled.nav`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  
-  &.HeaderOff {
-    display: none;
-  }
 
   @media (min-width: 768px) { 
     padding: 0px 80px;
@@ -34,16 +30,10 @@ const Nav = ({ showNav }: NavProps) => {
     return (
       <NavGroup>
         <Link href="/">
-          <Button type="link" className="theme-color">Accueil</Button>
+          <Button type="link">Journal</Button>
         </Link>
-        <Link href="/jobs/index" as="/jobs">
-          <Button type="link" className="theme-color">Annonces</Button>
-        </Link>
-        <Link href="/landing">
-          <Button type="link" className="theme-color">Landing</Button>
-        </Link>
-        <Link href="/blog/index" as="/blog">
-          <Button type="link" className="theme-color">Blog</Button>
+        <Link href="/" as="/blog">
+          <Button type="link">Contact</Button>
         </Link>
       </NavGroup>
     );

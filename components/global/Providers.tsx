@@ -4,25 +4,25 @@ import { ThemeProvider } from 'styled-components'
 import { GlobalStyle, lightTheme, darkTheme } from './Theme';
 
 export default ({ children }) => {
-  const { value } = useDarkMode(false)
-  const theme = value ? darkTheme : lightTheme
+  // const { value } = useDarkMode(false)
+  // const theme = value ? darkTheme : lightTheme
 
-  const [mounted, setMounted] = React.useState(false)
+  // const [mounted, setMounted] = React.useState(false)
 
-  React.useEffect(() => {
-    setMounted(true)
-  }, [])
+  // React.useEffect(() => {
+  //   setMounted(true)
+  // }, [])
     
   const body = 
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={lightTheme}>
       <GlobalStyle />
       {children}
     </ThemeProvider>
 
   // prevents ssr flash for mismatched dark mode
-  if (!mounted) {
-      return <div style={{ visibility: 'hidden' }}>{body}</div>
-  }
+  // if (!mounted) {
+  //     return <div style={{ visibility: 'hidden' }}>{body}</div>
+  // }
 
   return body
 }

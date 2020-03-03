@@ -9,7 +9,7 @@ const Query = ({ children, query, id=null, slug=null }) => {
   });
 
   if (loading) return (
-    <Row type="flex" justify="center" align="middle" style={{height: "100vh"}}>
+    <Row justify="center" align="middle" style={{height: "100vh"}}>
       <Button type="primary" size="large" loading>
         Chargement
       </Button>

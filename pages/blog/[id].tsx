@@ -48,7 +48,7 @@ const Article = () => {
               }}
             />
             <Header afterScroll/>
-            <Row type="flex" justify="center" align="top" style={{padding: "100px 0"}}>
+            <Row justify="center" align="top" style={{padding: "100px 0"}}>
               <Col xs={24} md={16}>
                 <Tag color={article.category.color}>{article.category.name}</Tag>
                 <h1>{article.title}</h1>
@@ -68,7 +68,7 @@ const Article = () => {
                 fetchFormat="auto"
               />
             </Image>
-            <Row type="flex" justify="center" align="top">
+            <Row justify="center" align="top">
               <Col xs={24} md={16} style={{padding: "80px 0"}}>
                 <Markdown markup={article.content} />
               </Col>

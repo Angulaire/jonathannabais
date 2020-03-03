@@ -39,6 +39,7 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
           <link rel="manifest" href="/favicon/site.webmanifest"/>
           <meta name="theme-color" content="#FFF"/>
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         </Head>
         <body>
           <Main />

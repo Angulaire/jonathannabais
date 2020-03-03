@@ -103,7 +103,7 @@ const JobCard = ({ job }: JobProps) => {
     <Link href={'/jobs/[id]'} as={`/jobs/${job._id}`}>
       <a>
         <CardGroup>
-          <Row type="flex" justify="center" align="top">
+          <Row justify="center" align="top">
             <Col xs={24} md={8}>
               <CardImage>
                 <IndustryImage industry={job.secteur_metier_interim} />

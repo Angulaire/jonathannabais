@@ -60,7 +60,7 @@ const BlogIndex = () => {
             <Header afterScroll defaultTheme="light"/>
             <Link href={'/blog/[id]'} as={`/blog/${lastArticle.slug}`}>
               <a>
-                <StyledRow type="flex" justify="start" align="middle">
+                <StyledRow justify="start" align="middle">
                   <Col xs={0} md={8}>
                     <ImageGroup>
                       <Image 
@@ -90,7 +90,7 @@ const BlogIndex = () => {
                 </StyledRow>
               </a>
             </Link>
-            <Row type="flex" justify="start" align="top">
+            <Row justify="start" align="top">
               <OverDiv/>
               <OverGroup>
                 {otherArticles.map(article => (
