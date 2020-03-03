@@ -47,7 +47,7 @@ const Article = () => {
                 ]
               }}
             />
-            <Header afterScroll/>
+            <Header />
             <Row justify="center" align="top" style={{padding: "100px 0"}}>
               <Col xs={24} md={16}>
                 <Tag color={article.category.color}>{article.category.name}</Tag>

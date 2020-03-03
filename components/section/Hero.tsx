@@ -78,18 +78,18 @@ class Hero extends React.Component<HeroProps> {
               <g id="Index" transform="translate(-640.000000, -447.000000)">
                 <g id="Shape" transform="translate(640.000000, 447.000000)">
                   <ellipse id="Oval" fill="#397FD6" cx="163.5" cy="165" rx="163.5" ry="165"></ellipse>
-                  <path d="M17,90 L51,286" id="Path" stroke="#FFFFFF" stroke-width="1.43564955"></path>
-                  <path d="M75,305 L125,5" id="Path" stroke="#FFFFFF" stroke-width="1.43564955"></path>
-                  <path d="M46,51 L251,306" id="Path" stroke="#FFFFFF" stroke-width="1.43564955"></path>
-                  <path d="M160,331 L302,86" id="Path" stroke="#FFFFFF" stroke-width="1.43564955"></path>
-                  <path d="M219,10 L320,218" id="Path" stroke="#FFFFFF" stroke-width="1.43564955"></path>
+                  <path d="M17,90 L51,286" id="Path" stroke="#FFFFFF" strokeWidth="1.43564955"></path>
+                  <path d="M75,305 L125,5" id="Path" stroke="#FFFFFF" strokeWidth="1.43564955"></path>
+                  <path d="M46,51 L251,306" id="Path" stroke="#FFFFFF" strokeWidth="1.43564955"></path>
+                  <path d="M160,331 L302,86" id="Path" stroke="#FFFFFF" strokeWidth="1.43564955"></path>
+                  <path d="M219,10 L320,218" id="Path" stroke="#FFFFFF" strokeWidth="1.43564955"></path>
                 </g>
               </g>
             </svg>
           </ShapeTwo>
           <ShapeTree data-aos="fade-left" data-aos-duration="700">
             <svg width="373px" height="373px" viewBox="0 0 373 373" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                     <g id="Index" transform="translate(-1005.000000, -231.000000)" fill="#57DBE9">
                         <g id="Hero">
                             <g id="Graphic" transform="translate(1191.500000, 417.500000) scale(-1, -1) rotate(-90.000000) translate(-1191.500000, -417.500000) translate(1005.000000, 231.000000)">
