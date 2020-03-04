@@ -3,9 +3,11 @@ import { createGlobalStyle } from 'styled-components'
 export const lightTheme = {
   bg: {
     primary: '#06205C',
+    secondary: '#FFF'
   },
   text: {
     primary: '#FFF',
+    secondary: '#06205C'
   },
   // ...
 }
