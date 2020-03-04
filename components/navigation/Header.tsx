@@ -4,10 +4,13 @@ import Nav from './Nav'
 import styled from 'styled-components'
 
 const HeaderGroup = styled.header`
+  @media only screen and (min-width: 768px) { 
+    padding: 0 80px;
+  }
+  padding: 0 20px;
   background: transparent;
   width: 100%;
   height: 80px;
-  padding: 0px 80px;
   z-index: 100;
 
   display: -webkit-box;
@@ -29,7 +32,7 @@ class Header extends React.Component {
     return (     
       <HeaderGroup >
         <a href="/">
-          <Logo/>
+          <Logo />
         </a>
         <Nav showNav/>
       </HeaderGroup>

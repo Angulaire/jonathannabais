@@ -5,6 +5,11 @@ import styled from 'styled-components'
 
 const NavGroup = styled.nav`
   justify-content: right;
+
+  a {
+    color: white;
+    margin-left: 20px;
+  }
 `
 
 type NavProps = {
@@ -16,10 +21,10 @@ const Nav = ({ showNav }: NavProps) => {
     return (
       <NavGroup>
         <Link href="/blog/index" as="/blog">
-          <Button type="link">Journal</Button>
+          Journal
         </Link>
         <Link href="/">
-          <Button type="link">Contact</Button>
+          Contact
         </Link>
       </NavGroup>
     );

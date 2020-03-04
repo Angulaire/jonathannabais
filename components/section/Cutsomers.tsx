@@ -23,7 +23,9 @@ const CardImage = styled.div`
     display: block;
     width: 100%;
     height: 100%;
-    -webkit-background-size: fill;
+    -webkit-background-size: fill; /* Safari et Chrome */
+    -moz-background-size: fill; /* Firefox */
+    -o-background-size: fill; /* Opera */
     background-size: fill;
     background-position: center center;
     background-repeat: no-repeat;
