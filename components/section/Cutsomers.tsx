@@ -3,20 +3,30 @@ import styled from 'styled-components';
 
 const Section = styled.section`
   @media only screen and (min-width: 768px) { 
-    margin: 80px;
+    margin: 60px;
   }
 `
 
 const CustomerCard = styled.div`
+  margin: 10px;
   background-color: #172D5F;
   padding: 40px 65px;
+  height: 160px;
 
 `
 
 const CardImage = styled.div`
   width: 100%;
   height: 100%;
-  img {
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: fill;
+    background-size: fill;
+    background-position: center center;
+    background-repeat: no-repeat;
     -webkit-transition: all 1s ease; /* Safari et Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* Internet Explorer 9 */
@@ -24,7 +34,7 @@ const CardImage = styled.div`
     transition: all 1s ease;
   }
   
-  img:hover {
+  a:hover {
     -webkit-transform:scale(1.1); /* Safari et Chrome */
     -moz-transform:scale(1.1); /* Firefox */
     -ms-transform:scale(1.1); /* Internet Explorer 9 */
@@ -41,33 +51,43 @@ const Customers = () => {
         <Col xs={24} md={8}>
           <CustomerCard>
             <CardImage>
-              <img src="/logo-edhec.png" alt="Logo EDHEC"/>
+              <a style={{backgroundImage: "url(/logo-edhec.png)"}}/>
             </CardImage>
           </CustomerCard>
         </Col>
         <Col xs={24} md={8}>
           <CustomerCard>
-            <img src="/logo-edflex.png" alt="Logo EDHEC"/>
+            <CardImage>
+              <a style={{backgroundImage: "url(/logo-edflex.png)"}}/>
+            </CardImage>
           </CustomerCard>
         </Col>
         <Col xs={24} md={8}>
           <CustomerCard>
-            <img src="/logo-blvck.png" alt="Logo EDHEC"/>
+            <CardImage>
+              <a style={{backgroundImage: "url(/logo-blvck.png)"}}/>
+            </CardImage>
           </CustomerCard>
         </Col>
         <Col xs={24} md={8}>
           <CustomerCard>
-            <img src="/logo-perenco.png" alt="Logo EDHEC" width="100%"/>
+            <CardImage>
+              <a style={{backgroundImage: "url(/logo-perenco.png)"}}/>
+            </CardImage>
           </CustomerCard>
         </Col>
         <Col xs={24} md={8}>
           <CustomerCard>
-            <img src="/logo-moodz.png" alt="Logo EDHEC" width="100%"/>
+            <CardImage>
+              <a style={{backgroundImage: "url(/logo-moodz.png)"}}/>
+            </CardImage>
           </CustomerCard>
         </Col>
         <Col xs={24} md={8}>
           <CustomerCard>
-            <img src="/logo-lagardere.png" alt="Logo EDHEC" width="100%"/>
+            <CardImage>
+              <a style={{backgroundImage: "url(/logo-lagardere.png)"}}/>
+            </CardImage>
           </CustomerCard>
         </Col>
       </Row>
