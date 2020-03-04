@@ -3,13 +3,15 @@ import { TwitterCircleFilled, LinkedinFilled } from '@ant-design/icons';
 import styled from 'styled-components';
 
 const FooterGroup = styled.footer`
-  @media only screen and (min-width: 768px) { 
-    padding: 140px 80px 30px;
-  }
-  padding: 20px;
   background: ${props => props.theme.bg.matt};
   a {
     color: white;
+  }
+  margin: 100px 20px 20px;
+  text-align: center;
+  @media only screen and (min-width: 768px) { 
+    margin: 100px 80px 20px;
+    text-align: left;
   }
 `
 
@@ -22,9 +24,7 @@ const Sitemap = styled.ul`
 `
 
 const SEO = styled(Col)`
-  border-right: 1px solid white;
-  padding-right: 8px;
-
+  position: relative;
   h3 {
     font-size: 26px;
   }
@@ -33,24 +33,43 @@ const SEO = styled(Col)`
     color: white;
     font-size: 14px;
   }
+  margin-bottom: 80px;
+  @media only screen and (min-width: 768px) { 
+    margin-bottom: 40px;
+    border-right: 1px solid white;
+  }
 
 `
 
-const Socials = styled.ul`
-  list-style: none;
-  padding: 12px 0;
-  li {
-    margin-right: 12px;
-    display: inline;
+const Socials = styled.div`
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    padding: 12px 0;
+    li {
+      margin-right: 12px;
+      display: inline;
+      svg { 
+        font-size: 22px;
+      }
+    }
   }
-  svg { 
-    font-size: 22px;
+
+  display: flex;
+  justify-content: center;
+  @media only screen and (min-width: 768px) { 
+    justify-content: left;
   }
+  
 `
 
 const CopyrightFooter = styled(Row)`
   border-top: 1px solid white;
-  padding-top: 12px;
+  margin-top: 20px;
+  padding-top: 20px;
 
   p {
     @media only screen and (min-width: 768px) { 
@@ -70,8 +89,22 @@ const Footer = () => {
         <SEO xs={24} md={8}>
           <h3>Jonathan</h3>
           <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat.</p>  
+          <Socials>
+            <ul>
+              <li>
+                <a href="https://twitter.com/Jonathannabais" target="_blank">
+                  <TwitterCircleFilled />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jonathannabais/" target="_blank">
+                  <LinkedinFilled />
+                </a>
+              </li>
+            </ul>
+          </Socials>
         </SEO>
-        <Col xs={24} md={{ span: 3, offset: 1 }}>
+        <Col xs={12} md={{ span: 3, offset: 1 }}>
           <h4>SERVICES</h4>
           <Sitemap>
             <li>
@@ -85,7 +118,7 @@ const Footer = () => {
             </li>
           </Sitemap>
         </Col>
-        <Col xs={24} md={4}>
+        <Col xs={12} md={4}>
           <h4>EN SAVOIR PLUS</h4>
           <Sitemap>
             <li>
@@ -99,7 +132,7 @@ const Footer = () => {
             </li>
           </Sitemap>
         </Col>
-        <Col xs={24} md={4}>
+        <Col xs={12} md={4}>
           <h4>INFORMATIONS</h4>
           <Sitemap>
             <li>
@@ -113,7 +146,7 @@ const Footer = () => {
             </li>
           </Sitemap>
         </Col>
-        <Col xs={24} md={4}>
+        <Col xs={12} md={4}>
           <h4>CONTACT</h4>
           <Sitemap>
             <li>
@@ -127,20 +160,6 @@ const Footer = () => {
             </li>
           </Sitemap>
         </Col>
-      </Row>
-      <Row justify="space-between" align="middle">
-        <Socials>
-          <li>
-            <a href="https://twitter.com/Jonathannabais" target="_blank">
-              <TwitterCircleFilled />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/jonathannabais/" target="_blank">
-              <LinkedinFilled />
-            </a>
-          </li>
-        </Socials>
       </Row>
       <CopyrightFooter justify="space-between" align="middle">
         <Col xs={24} md={12}>

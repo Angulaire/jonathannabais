@@ -21,10 +21,10 @@ const Nav = ({ showNav }: NavProps) => {
     return (
       <NavGroup>
         <Link href="/blog/index" as="/blog">
-          Journal
+          <a>Journal</a>
         </Link>
         <Link href="/">
-          Contact
+          <a>Contact</a>
         </Link>
       </NavGroup>
     );
