@@ -1,5 +1,6 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
+import AOS from 'aos'
 
 const Section = styled.section`
   @media only screen and (min-width: 768px) { 
@@ -52,46 +53,58 @@ const Customers = () => {
       <h2>Quelques clients</h2>
       <Row justify="center" align="middle">
         <Col xs={24} md={8}>
-          <CustomerCard>
-            <CardImage>
-              <a style={{backgroundImage: "url(/logo-edhec.png)"}}/>
-            </CardImage>
-          </CustomerCard>
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <CustomerCard>
+              <CardImage>
+                <a style={{backgroundImage: "url(/logo-edhec.png)"}}/>
+              </CardImage>
+            </CustomerCard>
+          </div>
         </Col>
         <Col xs={24} md={8}>
-          <CustomerCard>
-            <CardImage>
-              <a style={{backgroundImage: "url(/logo-edflex.png)"}}/>
-            </CardImage>
-          </CustomerCard>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <CustomerCard>
+              <CardImage>
+                <a style={{backgroundImage: "url(/logo-edflex.png)"}}/>
+              </CardImage>
+            </CustomerCard>
+          </div>
         </Col>
         <Col xs={24} md={8}>
-          <CustomerCard>
-            <CardImage>
-              <a style={{backgroundImage: "url(/logo-blvck.png)"}}/>
-            </CardImage>
-          </CustomerCard>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <CustomerCard>
+              <CardImage>
+                <a style={{backgroundImage: "url(/logo-blvck.png)"}}/>
+              </CardImage>
+            </CustomerCard>
+          </div>
         </Col>
         <Col xs={24} md={8}>
-          <CustomerCard>
-            <CardImage>
-              <a style={{backgroundImage: "url(/logo-perenco.png)"}}/>
-            </CardImage>
-          </CustomerCard>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <CustomerCard>
+              <CardImage>
+                <a style={{backgroundImage: "url(/logo-perenco.png)"}}/>
+              </CardImage>
+            </CustomerCard>
+          </div>
         </Col>
         <Col xs={24} md={8}>
-          <CustomerCard>
-            <CardImage>
-              <a style={{backgroundImage: "url(/logo-moodz.png)"}}/>
-            </CardImage>
-          </CustomerCard>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <CustomerCard>
+              <CardImage>
+                <a style={{backgroundImage: "url(/logo-moodz.png)"}}/>
+              </CardImage>
+            </CustomerCard>
+          </div>
         </Col>
         <Col xs={24} md={8}>
-          <CustomerCard>
-            <CardImage>
-              <a style={{backgroundImage: "url(/logo-lagardere.png)"}}/>
-            </CardImage>
-          </CustomerCard>
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <CustomerCard>
+              <CardImage>
+                <a style={{backgroundImage: "url(/logo-lagardere.png)"}}/>
+              </CardImage>
+            </CustomerCard>
+          </div>
         </Col>
       </Row>
     </Section>

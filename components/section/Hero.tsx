@@ -125,7 +125,7 @@ class Hero extends React.Component<HeroProps> {
                   </g>
               </svg>
             </ShapeTree>
-            <ShapeAvatar data-aos='slide-up' data-aos-duration="1000">
+            <ShapeAvatar data-aos='slide-up' data-aos-duration="2000">
               <img src="/jonathannabais.png" width="100%" alt="Jonathan Nabais, CEO @Angulaire"/>
             </ShapeAvatar>
           </Col>
