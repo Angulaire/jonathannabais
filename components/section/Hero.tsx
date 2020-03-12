@@ -99,7 +99,7 @@ class Hero extends React.Component<HeroProps> {
               </svg>
             </ShapeOne>
             <ShapeTwo data-aos="fade-left" data-aos-duration="600">
-              <svg viewBox="0 0 327 332" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <svg viewBox="0 0 327 332" xmlns="http://www.w3.org/2000/svg">
                 <g id="Index" transform="translate(-640.000000, -447.000000)">
                   <g id="Shape" transform="translate(640.000000, 447.000000)">
                     <ellipse id="Oval" fill="#397FD6" cx="163.5" cy="165" rx="163.5" ry="165"></ellipse>
