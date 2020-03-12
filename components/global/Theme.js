@@ -11,11 +11,18 @@ const baseColors = {
 
 export const lightTheme = {
   colors: {
-    primary: baseColors.blue,
-    secondary: baseColors.white,
+    primary: {
+      bg: baseColors.blue,
+      text: baseColors.white
+    },
+    secondary: {
+      bg: baseColors.white,
+      text: baseColors.blue
+    },
     black: baseColors.black,
     white: baseColors.white
   },
+  // TO DELETE
   bg: {
     primary: '#06205C',
     secondary: '#FFF'
@@ -52,7 +59,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: Averta, -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, sans-serif;
     -webkit-font-smoothing: antialiased;
-		background-color: ${props => props.theme.colors.primary};
+		background-color: ${props => props.theme.colors.primary.bg};
   }
 	h1 {
     @media only screen and (min-width: 768px) { 
@@ -73,7 +80,7 @@ export const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: -.05rem;
-    color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.primary.text};
     font-weight: bold;
   }
 	

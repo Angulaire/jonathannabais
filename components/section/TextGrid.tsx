@@ -12,15 +12,15 @@ const Section = styled('section')(
   variant({
     variants: {
       primary: {
-        color: 'white',
-        bg: 'transparent',
-        'h3': {
-          color: 'white',
-        }
+        color: 'primary.text',
+        bg: 'primary.bg',
       },
       secondary: {
-        color: 'black',
-        bg: 'white',
+        color: 'secondary.text',
+        bg: 'secondary.bg',
+        'h2, h3': {
+          color: 'black',
+        }
       },
     }
   })
