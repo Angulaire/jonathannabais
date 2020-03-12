@@ -1,6 +1,21 @@
 import { createGlobalStyle } from 'styled-components'
 
+const baseColors = {
+  blue: '#06205C',
+  white: '#FFF',
+  black: '#000',
+  greyLight: '#29282E',
+  grey: '#29282E',
+  greyDark: '#29282E',
+}
+
 export const lightTheme = {
+  colors: {
+    primary: baseColors.blue,
+    secondary: baseColors.white,
+    black: baseColors.black,
+    white: baseColors.white
+  },
   bg: {
     primary: '#06205C',
     secondary: '#FFF'
@@ -37,7 +52,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: Averta, -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, sans-serif;
     -webkit-font-smoothing: antialiased;
-		background-color: ${props => props.theme.bg.primary};
+		background-color: ${props => props.theme.colors.primary};
   }
 	h1 {
     @media only screen and (min-width: 768px) { 
@@ -58,12 +73,12 @@ export const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: -.05rem;
-    color: ${props => props.theme.text.primary};
+    color: ${props => props.theme.colors.primary};
     font-weight: bold;
   }
 	
 	p {
-		color: ${props => props.theme.text.grey};
+		color: ${props => props.theme.colors.grey};
 		font-size: 18px;
 		font-weight: normal;
 		line-height: 1.4;
@@ -72,13 +87,6 @@ export const GlobalStyle = createGlobalStyle`
 	
 	*:focus {
 		outline:none
-  }
-
-  .ant-btn-lg {
-    padding: 0 25px;
-  }
-  .ant-btn-link {
-    color: ${props => props.theme.text.primary};
   }
   
 `

@@ -1,6 +1,12 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
-import Section from './Default'
+
+const Section = styled.section`
+  @media only screen and (min-width: 768px) { 
+    margin: 60px;
+  }
+  margin: 20px;
+`
 
 const CustomerCard = styled.div`
   margin: 10px;

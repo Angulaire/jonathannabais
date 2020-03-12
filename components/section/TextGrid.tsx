@@ -1,6 +1,30 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
-import Section from './Default'
+import { variant } from 'styled-system';
+
+// const Section = styled.section`
+//   @media only screen and (min-width: 768px) { 
+//     padding: 60px;
+//   }
+//   padding: 20px;
+// `
+const Section = styled('section')(
+  variant({
+    variants: {
+      primary: {
+        color: 'white',
+        bg: 'transparent',
+        'h3': {
+          color: 'white',
+        }
+      },
+      secondary: {
+        color: 'black',
+        bg: 'white',
+      },
+    }
+  })
+)
 
 const TextCard = styled.div`
 `
@@ -8,12 +32,14 @@ const TextCard = styled.div`
 type TextGridProps = {
   title: string;
   textCards: any;
-};
+  variant: string;
+}
 
-const TextGrid = ({ title, textCards }: TextGridProps) => {
+
+const TextGrid = ({ title, textCards, variant }: TextGridProps) => {
 
   return (
-    <Section>
+    <Section variant={variant}>
       <h2>{title}</h2>
       <Row justify="center" align="middle">
       {textCards.map( textCard =>
@@ -30,4 +56,5 @@ const TextGrid = ({ title, textCards }: TextGridProps) => {
     </Section>
   )
 }
+
 export default TextGrid

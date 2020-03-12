@@ -3,14 +3,10 @@ import Header from '../components/navigation/Header';
 import Footer from '../components/navigation/Footer';
 import Hero from '../components/section/Hero';
 import CTA from '../components/section/CTA';
-import Customers from '../components/section/Cutsomers';
+import Customers from '../components/section/Customers';
 import TextGrid from '../components/section/TextGrid';
 
-interface IndexPageProps {
-  isAuthenticated: boolean;
-}
-
-class IndexPage extends React.Component<IndexPageProps> {
+class IndexPage extends React.Component {
 
   render() {
     return (
@@ -28,6 +24,25 @@ class IndexPage extends React.Component<IndexPageProps> {
             {title: "Production", description: "Ad adipisicing velit quis ut excepteur ut dolore mollit ex in."},
             {title: "Suivi", description: "Sunt proident magna excepteur ad."}
           ]}
+          variant="secondary"
+        />
+        <TextGrid
+          title="Comment s'y prendre ?"
+          textCards={[
+            {title: "Rencontre", description: "Veniam nostrud do amet consequat."},
+            {title: "Qualification", description: "Sunt elit deserunt eiusmod nulla consequat qui eiusmod occaecat."},
+            {title: "Proposition", description: "Excepteur amet sunt aliquip veniam reprehenderit ex sint aliquip cupidatat."},
+          ]}
+          variant="primary"
+        />
+        <TextGrid
+          title="Pouquoi me choisir ?"
+          textCards={[
+            {title: "Champ d'action", description: "Veniam nostrud do amet consequat."},
+            {title: "Expertises", description: "Sunt elit deserunt eiusmod nulla consequat qui eiusmod occaecat."},
+            {title: "Track record", description: "Excepteur amet sunt aliquip veniam reprehenderit ex sint aliquip cupidatat."},
+          ]}
+          variant="secondary"
         />
         <Customers />
         <CTA />
