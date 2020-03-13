@@ -5,6 +5,7 @@ import Hero from '../components/section/Hero';
 import CTA from '../components/section/CTA';
 import Customers from '../components/section/Customers';
 import TextGrid from '../components/section/TextGrid';
+import Tools from '../components/section/Tools';
 
 class IndexPage extends React.Component {
 
@@ -24,16 +25,8 @@ class IndexPage extends React.Component {
             {title: "Production", description: "Ad adipisicing velit quis ut excepteur ut dolore mollit ex in."},
             {title: "Suivi", description: "Sunt proident magna excepteur ad."}
           ]}
-          variant="secondary"
-        />
-        <TextGrid
-          title="Comment s'y prendre ?"
-          textCards={[
-            {title: "Rencontre", description: "Veniam nostrud do amet consequat."},
-            {title: "Qualification", description: "Sunt elit deserunt eiusmod nulla consequat qui eiusmod occaecat."},
-            {title: "Proposition", description: "Excepteur amet sunt aliquip veniam reprehenderit ex sint aliquip cupidatat."},
-          ]}
-          variant="primary"
+          color="secondary"
+          space="marginLeft"
         />
         <TextGrid
           title="Pouquoi me choisir ?"
@@ -42,7 +35,23 @@ class IndexPage extends React.Component {
             {title: "Expertises", description: "Sunt elit deserunt eiusmod nulla consequat qui eiusmod occaecat."},
             {title: "Track record", description: "Excepteur amet sunt aliquip veniam reprehenderit ex sint aliquip cupidatat."},
           ]}
-          variant="secondary"
+          color="primary"
+          space="default"
+        />
+        <TextGrid
+          title="Comment s'y prendre ?"
+          textCards={[
+            {number: 1, title: "Rencontre", description: "Veniam nostrud do amet consequat."},
+            {number: 2, title: "Qualification", description: "Sunt elit deserunt eiusmod nulla consequat qui eiusmod occaecat."},
+            {number: 3, title: "Proposition", description: "Excepteur amet sunt aliquip veniam reprehenderit ex sint aliquip cupidatat."},
+          ]}
+          color="secondary"
+          space="marginLeft"
+        />
+        <Tools
+          title="Ils* adorent"
+          color="primary"
+          space="default"
         />
         <Customers />
         <CTA />
