@@ -1,12 +1,6 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
-
-const Section = styled.section`
-  @media only screen and (min-width: 768px) { 
-    margin: 60px;
-  }
-  margin: 20px;
-`
+import Section from './Default'
 
 const CustomerCard = styled.div`
   margin: 10px;
@@ -45,10 +39,19 @@ const CardImage = styled.div`
   }
 `
 
-const Customers = () => {
+type CustomersProps = {
+  title: string;
+  color: string;
+  space: string;
+}
+
+const Customers = ({ title, color, space }) => {
   return (
-    <Section>
-      <h2>Quelques clients</h2>
+    <Section
+      color={color} 
+      space={space}
+    >
+      <h2>{title}</h2>
       <Row justify="center" align="middle">
         <Col xs={24} md={8}>
           <div data-aos="fade-up" data-aos-duration="1000">

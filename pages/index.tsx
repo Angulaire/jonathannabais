@@ -53,7 +53,11 @@ class IndexPage extends React.Component {
           color="primary"
           space="default"
         />
-        <Customers />
+        <Customers 
+          title="Quelques clients"
+          color="primary"
+          space="default"
+        />
         <CTA />
         <Footer />
       </>

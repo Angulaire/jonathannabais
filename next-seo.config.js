@@ -1,5 +1,5 @@
 export default {
-  title: "Kernn - Un site carrière focus candidats et pour marque employeur",
+  title: "Jonathan - Un mec propre pour vous servir",
   description: "Kernn est une démonstration concrète des solutions que nous proposons à nos clients afin de développer leur marque employeur et d'optimiser les performances.",
   canonical: "https://kernn.io",
   openGraph: {
