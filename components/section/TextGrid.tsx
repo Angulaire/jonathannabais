@@ -1,6 +1,5 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
-import { variant } from 'styled-system';
 import Section from './Default'
 
 const TextCard = styled.div`
