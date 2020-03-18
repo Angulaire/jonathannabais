@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Section from './Default'
 
 const CustomerCard = styled.div`
-  margin: 10px;
   background-color: #172D5F;
   padding: 40px 65px;
   height: 160px;
@@ -43,70 +42,28 @@ type CustomersProps = {
   title: string;
   color: string;
   space: string;
+  customers: any;
 }
 
-const Customers = ({ title, color, space }) => {
+const Customers = ({ title, customers, color, space }: CustomersProps) => {
   return (
     <Section
       color={color} 
       space={space}
     >
       <h2>{title}</h2>
-      <Row justify="center" align="middle">
-        <Col xs={24} md={8}>
-          <div data-aos="fade-up" data-aos-duration="1000">
-            <CustomerCard>
-              <CardImage>
-                <a style={{backgroundImage: "url(/logo-edhec.png)"}}/>
-              </CardImage>
-            </CustomerCard>
-          </div>
-        </Col>
-        <Col xs={24} md={8}>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-            <CustomerCard>
-              <CardImage>
-                <a style={{backgroundImage: "url(/logo-edflex.png)"}}/>
-              </CardImage>
-            </CustomerCard>
-          </div>
-        </Col>
-        <Col xs={24} md={8}>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <CustomerCard>
-              <CardImage>
-                <a style={{backgroundImage: "url(/logo-blvck.png)"}}/>
-              </CardImage>
-            </CustomerCard>
-          </div>
-        </Col>
-        <Col xs={24} md={8}>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-            <CustomerCard>
-              <CardImage>
-                <a style={{backgroundImage: "url(/logo-perenco.png)"}}/>
-              </CardImage>
-            </CustomerCard>
-          </div>
-        </Col>
-        <Col xs={24} md={8}>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-            <CustomerCard>
-              <CardImage>
-                <a style={{backgroundImage: "url(/logo-moodz.png)"}}/>
-              </CardImage>
-            </CustomerCard>
-          </div>
-        </Col>
-        <Col xs={24} md={8}>
-          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-            <CustomerCard>
-              <CardImage>
-                <a style={{backgroundImage: "url(/logo-lagardere.png)"}}/>
-              </CardImage>
-            </CustomerCard>
-          </div>
-        </Col>
+      <Row justify="center" align="middle" gutter={[16, 16]}>
+        {customers.map(customer => (
+          <Col xs={24} md={8}>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <CustomerCard>
+                <CardImage>
+                  <a style={{backgroundImage: `url(${customer.logo.url})`}}/>
+                </CardImage>
+              </CustomerCard>
+            </div>
+          </Col>
+        ))}
       </Row>
     </Section>
   )

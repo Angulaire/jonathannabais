@@ -17,6 +17,10 @@ const SectionGroup = styled('section')(
           color: 'black',
         }
       },
+      transparent: {
+        color: 'primary.text',
+        bg: 'transparent',
+      },
     },
   }),
   variant({
@@ -25,8 +29,11 @@ const SectionGroup = styled('section')(
       default: {
         padding: ['40px 20px', '80px 140px']
       },
+      hero: {
+        padding: ['0 20px', '0 0 0 140px'],
+        marginRight: ['0', '70px']
+      },
       fullWidth: {
-
       },
       marginLeft: {
         padding: ['40px 20px', '80px 140px 80px 70px'],

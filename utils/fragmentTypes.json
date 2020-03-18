@@ -39,6 +39,15 @@
             "name": "deleteCategoryPayload"
           },
           {
+            "name": "Global"
+          },
+          {
+            "name": "updateGlobalPayload"
+          },
+          {
+            "name": "deleteGlobalPayload"
+          },
+          {
             "name": "Job"
           },
           {
@@ -66,6 +75,15 @@
             "name": "UploadFile"
           },
           {
+            "name": "createFilePayload"
+          },
+          {
+            "name": "updateFilePayload"
+          },
+          {
+            "name": "deleteFilePayload"
+          },
+          {
             "name": "UsersPermissionsPermission"
           },
           {
@@ -91,6 +109,12 @@
           },
           {
             "name": "deleteUserPayload"
+          },
+          {
+            "name": "ComponentImage"
+          },
+          {
+            "name": "ComponentHeroSideForm"
           }
         ]
       },
@@ -99,7 +123,7 @@
         "name": "PageContentDynamicZone",
         "possibleTypes": [
           {
-            "name": "ComponentSectionHeroSideForm"
+            "name": "ComponentHeroSideForm"
           }
         ]
       }
