@@ -30,7 +30,7 @@ const IndexPage = ({ home }) => {
             <Hero
               title="Je pilote des stratégies pour les marques de demain."
               color={section.layout.color}
-              space={section.layout.space}
+              space="default"
             />
           )
         }
@@ -40,7 +40,7 @@ const IndexPage = ({ home }) => {
               title={section.title}
               tools={section.tool}
               color={section.layout.color}
-              space={section.layout.space}
+              space="default"
             />
           )
         }
@@ -50,18 +50,21 @@ const IndexPage = ({ home }) => {
               title={section.title}
               customers={section.customer}
               color={section.layout.color}
-              space={section.layout.space}
+              space="default"
             />
           )
         }
         if ( section.__typename === "ComponentTextGrid") {
           return (
+            <>
             <TextGrid
               title={section.title}
               textCards={section.textCard}
               color={section.layout.color}
               space={section.layout.space}
             />
+            {console.log(section)}
+            </>
           )
         }
       })}
