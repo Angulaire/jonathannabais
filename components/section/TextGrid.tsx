@@ -26,7 +26,7 @@ const TextGrid = ({ title, textCards, color, space }: TextGridProps) => {
         space={space}
       >
         <h2>{title}</h2>
-        <Row justify="center" align="top">
+        <Row justify="center" align="top" gutter={[8, 8]}>
         {textCards.map( textCard =>
           <Col xs={24} md={8}>
             <div data-aos="fade-up" data-aos-duration="1000">

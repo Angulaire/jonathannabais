@@ -11,6 +11,7 @@ import Hero from '../components/section/Hero';
 import CTA from '../components/section/CTA';
 import Customers from '../components/section/Customers';
 import TextGrid from '../components/section/TextGrid';
+import Testimonials from '../components/section/Testimonials'
 import Tools from '../components/section/Tools';
 
 const IndexPage = ({ home }) => {
@@ -30,7 +31,7 @@ const IndexPage = ({ home }) => {
             <Hero
               title="Je pilote des stratégies pour les marques de demain."
               color={section.layout.color}
-              space="default"
+              space={section.layout.space}
             />
           )
         }
@@ -40,7 +41,7 @@ const IndexPage = ({ home }) => {
               title={section.title}
               tools={section.tool}
               color={section.layout.color}
-              space="default"
+              space={section.layout.space}
             />
           )
         }
@@ -50,21 +51,27 @@ const IndexPage = ({ home }) => {
               title={section.title}
               customers={section.customer}
               color={section.layout.color}
-              space="default"
+              space={section.layout.space}
             />
           )
         }
         if ( section.__typename === "ComponentTextGrid") {
           return (
-            <>
             <TextGrid
               title={section.title}
               textCards={section.textCard}
               color={section.layout.color}
               space={section.layout.space}
             />
-            {console.log(section)}
-            </>
+          )
+        }
+        if ( section.__typename === "ComponentTestimonialsSlider") {
+          return (
+            <Testimonials
+              testimonials={section.testimonials}
+              color={section.layout.color}
+              space={section.layout.space}
+            />
           )
         }
       })}

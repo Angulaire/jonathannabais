@@ -47,13 +47,6 @@ export const GlobalStyle = createGlobalStyle`
     src: url(/fonts/Averta.woff);
     font-weight: bold;
     font-style: normal;
-    word-spacing: -20px;
-  }
-  @font-face {
-    font-family: Averta;
-    src: url(/fonts/Averta.woff);
-    font-weight: normal;
-    font-style: normal;
   }
   
   body {
@@ -63,19 +56,26 @@ export const GlobalStyle = createGlobalStyle`
   }
 	h1 {
     @media only screen and (min-width: 768px) { 
-      font-size: 52px;
+      font-size: 48px;
+      text-align: left;
     }
-    font-size: 2.5rem;
+    font-size: 46px;
+    text-align: center;
+    word-spacing: -20px;
     line-height: 1.1em;
     margin: 50px 0;
   }
   h2 {
     @media only screen and (min-width: 768px) {
-      font-size: 3.5rem;
+      font-size: 56px;
     }
-    font-size: 2rem;
-    line-height: 1.1;
-    margin: 50px 0;
+    word-spacing: -20px;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 
   h1, h2, h3, h4, h5, h6 {

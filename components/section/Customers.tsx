@@ -1,6 +1,6 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
-import Section from './Default'
+import Layout from '../global/Layout'
 
 const CustomerCard = styled.div`
   background-color: #172D5F;
@@ -47,25 +47,27 @@ type CustomersProps = {
 
 const Customers = ({ title, customers, color, space }: CustomersProps) => {
   return (
-    <Section
-      color={color} 
-      space={space}
-    >
-      <h2>{title}</h2>
-      <Row justify="center" align="middle" gutter={[16, 16]}>
-        {customers.map(customer => (
-          <Col xs={24} md={8}>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-              <CustomerCard>
-                <CardImage>
-                  <a style={{backgroundImage: `url(${customer.logo.url})`}}/>
-                </CardImage>
-              </CustomerCard>
-            </div>
-          </Col>
-        ))}
-      </Row>
-    </Section>
+    <section>
+      <Layout
+        color={color} 
+        space={space}
+      >
+        <h2>{title}</h2>
+        <Row justify="center" align="middle" gutter={[16, 16]}>
+          {customers.map(customer => (
+            <Col xs={24} md={8}>
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <CustomerCard>
+                  <CardImage>
+                    <a style={{backgroundImage: `url(${customer.logo.url})`}}/>
+                  </CardImage>
+                </CustomerCard>
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </Layout>
+    </section>
   )
 }
 export default Customers

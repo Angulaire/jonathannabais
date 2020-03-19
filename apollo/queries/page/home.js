@@ -51,6 +51,27 @@ const HOME_QUERY = gql`
             space
           }
         }
+        ... on ComponentTestimonialsSlider {
+          testimonials {
+            name
+            avatar {
+              url
+            }
+            testimonial
+            compagnyName
+            compagnyColor
+            compagnyLogo {
+              url
+            }
+            icon {
+              url
+            }
+          }
+          layout {
+            color
+            space
+          }
+        }
       }
     }
   }

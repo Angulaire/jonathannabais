@@ -10,12 +10,15 @@ const LayoutGroup = styled('div')(
       primary: {
         color: 'primary.text',
         bg: 'primary.bg',
+        'h2, h3': {
+          color: 'primary.text',
+        }
       },
       secondary: {
         color: 'secondary.text',
         bg: 'secondary.bg',
         'h2, h3': {
-          color: 'black',
+          color: 'secondary.text',
         }
       },
       transparent: {

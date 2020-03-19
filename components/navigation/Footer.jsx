@@ -85,7 +85,7 @@ const CopyrightFooter = styled(Row)`
 const Footer = () => {
   return (
     <FooterGroup>
-      <Row justify="left" align="top">
+      <Row justify="left" align="top" gutter={[8, 8]}>
         <SEO xs={24} md={8}>
           <h3>Jonathan</h3>
           <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat.</p>  

@@ -1,6 +1,6 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
-import Section from './Default'
+import Layout from '../global/Layout'
 
 const ToolCard = styled.div`
   background-color: #172D5F;
@@ -51,7 +51,7 @@ const InfoHover = styled.div`
     }
   }
 
-  h3 {
+  p {
     text-align: center;
   }
 `
@@ -67,29 +67,31 @@ type ToolsProps = {
 const Tools = ({ title, color, space, tools }: ToolsProps) => {
 
   return (
-    <Section 
-      color={color} 
-      space={space}
-    >
-      <h2>{title}</h2>
-      <InfoHover>
-        <Row justify="center" align="top" gutter={[16, 16]}>
-          {tools.map(tool =>
-            <Col xs={12} md={4}>
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <ToolCard>
-                  <CardImage>
-                    <a style={{backgroundImage: `url(${tool.logo.url})`}}/>
-                  </CardImage>
-                </ToolCard>
-                <h3>{tool.name}</h3>
-              </div>
-            </Col>
-          )}
-        </Row>
-        <p className="info-hover">*Nos clients</p>
-      </InfoHover>
-    </Section>
+    <section>
+      <Layout
+        color={color} 
+        space={space}
+      >
+        <h2>{title}</h2>
+        <InfoHover>
+          <Row justify="center" align="top" gutter={[16, 16]}>
+            {tools.map(tool =>
+              <Col xs={12} md={4}>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                  <ToolCard>
+                    <CardImage>
+                      <a style={{backgroundImage: `url(${tool.logo.url})`}}/>
+                    </CardImage>
+                  </ToolCard>
+                  <p>{tool.name.toUpperCase()}</p>
+                </div>
+              </Col>
+            )}
+          </Row>
+          <p className="info-hover">*Nos clients</p>
+        </InfoHover>
+      </Layout>
+    </section>
   )
 }
 
