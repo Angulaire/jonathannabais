@@ -64,6 +64,7 @@ const ShapeAvatar = styled.div`
 
 type HeroProps = { 
   title: string;
+  imageUrl: string;
   color: string;
   space: string;
 }
@@ -75,16 +76,17 @@ class Hero extends React.Component<HeroProps> {
   }
 
   render() {
+    const { title, imageUrl, color, space } = this.props
     return (
       <HeroBg>
         <Header/>
         <Layout
-          color={this.props.color}
-          space={this.props.space}
+          color={color}
+          space={space}
         >
           <Row justify="center" align="middle">
             <Col xs={24} md={11}>
-              <h1>{this.props.title}</h1>
+              <h1>{title}</h1>
             </Col>
             <Col xs={24} md={13}>
               <ShapeOne data-aos="fade-up-left" data-aos-duration="500">
@@ -97,7 +99,7 @@ class Hero extends React.Component<HeroProps> {
                 <img src="https://res.cloudinary.com/angulaire/image/upload/v1584633151/aeiogpgsgpqsldquwzk5.svg"/>
               </ShapeTree>
               <ShapeAvatar data-aos='zoom-out' data-aos-duration="2000">
-                <img src="/jonathannabais.png" width="100%" alt="Jonathan Nabais, CEO @Angulaire"/>
+                <img src={imageUrl} width="100%" alt="Jonathan Nabais, CEO @Angulaire"/>
               </ShapeAvatar>
             </Col>
           </Row>

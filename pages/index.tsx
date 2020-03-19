@@ -29,7 +29,8 @@ const IndexPage = ({ home }) => {
         if ( section.__typename === "ComponentHero") {
           return (
             <Hero
-              title="Je pilote des stratégies pour les marques de demain."
+              title={section.heroTitle}
+              imageUrl={section.image.url}
               color={section.layout.color}
               space={section.layout.space}
             />

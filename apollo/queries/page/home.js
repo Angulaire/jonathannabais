@@ -6,6 +6,7 @@ const HOME_QUERY = gql`
       content {
         __typename
         ... on ComponentHero {
+          heroTitle: title
           image {
             url
           }
