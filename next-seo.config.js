@@ -7,7 +7,7 @@ export default {
     type: 'website',
     locale: 'fr_FR',
     url: 'https://jonathannabais.fr',
-    site_name: 'Kernn',
+    site_name: 'Jonathan Nabais',
     title: "Expert en Acquisition & Growth Marketing",
     description: "Au-delà d'un titre accrocheur, j'ai trouvé ma vocation grâce au web en 2014. Depuis, j'ai eu la chance de travailler avec des centaines d'entreprises.",
     images: [

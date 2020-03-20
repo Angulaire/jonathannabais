@@ -43,14 +43,23 @@ export const darkTheme = {
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: Averta-Bold;
-    src: url(/fonts/Averta.woff);
+    font-family: Averta;
+    src: url(/fonts/Averta-Bold.woff);
     font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Averta;
+    src: url(/fonts/Averta.woff);
+    font-weight: normal;
     font-style: normal;
   }
   
   body {
-    font-family: Averta, -apple-system, system-ui, BlinkMacSystemFont, Helvetica Neue, sans-serif;
+    font-family: Averta;
+    font-feature-settings: normal;
+    font-variant: normal;
     -webkit-font-smoothing: antialiased;
 		background-color: ${props => props.theme.colors.primary.bg};
   }

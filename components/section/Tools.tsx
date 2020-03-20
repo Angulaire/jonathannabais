@@ -80,15 +80,15 @@ const Tools = ({ title, color, space, tools }: ToolsProps) => {
         <InfoHover>
           <h2>{title}</h2>
           <Row justify="center" align="top" gutter={[16, 16]}>
-            {tools.map(tool =>
+            {tools.map((tool, index) =>
               <Col xs={12} md={4}>
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 100}>
                   <ToolCard>
                     <CardImage>
                       <a style={{backgroundImage: `url(${tool.logo.url})`}}/>
                     </CardImage>
                   </ToolCard>
-                  <p>{tool.name.toUpperCase()}</p>
+                  <p style={{fontSize: "14px"}}>{tool.name.toUpperCase()}</p>
                 </div>
               </Col>
             )}

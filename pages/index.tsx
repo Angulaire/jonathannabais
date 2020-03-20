@@ -8,7 +8,7 @@ import Header from '../components/navigation/Header';
 import Footer from '../components/navigation/Footer';
 import Loading from '../components/global/Loading'
 import Hero from '../components/section/Hero';
-import CTA from '../components/section/CTAn';
+import CTA from '../components/section/CTA';
 import Customers from '../components/section/Customers';
 import TextGrid from '../components/section/TextGrid';
 import Testimonials from '../components/section/Testimonials'
