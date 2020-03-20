@@ -40,15 +40,20 @@ const CardImage = styled.div`
 `
 
 const InfoHover = styled.div`
-  .info-hover {
-    display: none;
+  #info-hover {
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
   }
 
-  &:hover {
+  h2:hover {
     cursor: pointer;
-    .info-hover {
-      display: inline;
-    }
+  }
+
+  h2:hover ~ #info-hover {
+    visibility: visible;
+    opacity: 1;
   }
 
   p {
@@ -71,9 +76,9 @@ const Tools = ({ title, color, space, tools }: ToolsProps) => {
       <Layout
         color={color} 
         space={space}
-      >
-        <h2>{title}</h2>
+      > 
         <InfoHover>
+          <h2>{title}</h2>
           <Row justify="center" align="top" gutter={[16, 16]}>
             {tools.map(tool =>
               <Col xs={12} md={4}>
@@ -88,7 +93,7 @@ const Tools = ({ title, color, space, tools }: ToolsProps) => {
               </Col>
             )}
           </Row>
-          <p className="info-hover">*Nos clients</p>
+          <p id="info-hover">*Nos clients</p>
         </InfoHover>
       </Layout>
     </section>

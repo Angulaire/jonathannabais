@@ -52,6 +52,25 @@ const HOME_QUERY = gql`
             space
           }
         }
+        ... on ComponentCta {
+          id
+          ctaTitle: title
+          button {
+            text
+            type
+          }
+          layout {
+            color
+            space
+          }
+          shape {
+            image {
+              url
+            }
+            position
+            size
+          }
+        }
         ... on ComponentTestimonialsSlider {
           testimonials {
             name

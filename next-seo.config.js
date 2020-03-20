@@ -1,20 +1,21 @@
 export default {
-  title: "Jonathan - Un mec propre pour vous servir",
-  description: "Kernn est une démonstration concrète des solutions que nous proposons à nos clients afin de développer leur marque employeur et d'optimiser les performances.",
-  canonical: "https://kernn.io",
+  title: "Expert en Acquisition & Growth Marketing",
+  titleTemplate: 'Jonathan Nabais - %s',
+  description: "Au-delà d'un titre accrocheur, j'ai trouvé ma vocation grâce au web en 2014. Depuis, j'ai eu la chance de travailler avec des centaines d'entreprises.",
+  canonical: "https://jonathannabais.fr",
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://kernn.io',
+    url: 'https://jonathannabais.fr',
     site_name: 'Kernn',
-    title: "Kernn - Un site carrière focus candidats et pour marque employeur",
-    description: "Kernn est une démonstration concrète des solutions que nous proposons à nos clients afin de développer leur marque employeur et d'optimiser les performances.",
+    title: "Expert en Acquisition & Growth Marketing",
+    description: "Au-delà d'un titre accrocheur, j'ai trouvé ma vocation grâce au web en 2014. Depuis, j'ai eu la chance de travailler avec des centaines d'entreprises.",
     images: [
       {
-        url: "https://res.cloudinary.com/angulaire/image/upload/c_scale,h_630,w_1200/sample.jpg",
+        url: "https://res.cloudinary.com/angulaire/image/upload/c_scale,h_630,w_1200/v1584691346/a2ybdqkwidsmhinvmlh1.png",
         width: 1200,
         height: 630,
-        alt: 'Kernn Meta',
+        alt: 'Jonathan Nabais',
       }
     ]
   }
