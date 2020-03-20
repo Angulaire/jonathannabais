@@ -43,7 +43,7 @@ export const darkTheme = {
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: Averta;
+    font-family: Averta-Bold;
     src: url(/fonts/Averta.woff);
     font-weight: bold;
     font-style: normal;
