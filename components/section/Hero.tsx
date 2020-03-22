@@ -65,6 +65,7 @@ const ShapeAvatar = styled.div`
 type HeroProps = { 
   title: string;
   imageUrl: string;
+  navbar: any;
   color: string;
   space: string;
 }
@@ -76,10 +77,12 @@ class Hero extends React.Component<HeroProps> {
   }
 
   render() {
-    const { title, imageUrl, color, space } = this.props
+    const { title, imageUrl, navbar, color, space } = this.props
     return (
       <HeroBg>
-        <Header/>
+        <Header
+          navbar={navbar}
+        />
         <Layout
           color={color}
           space={space}

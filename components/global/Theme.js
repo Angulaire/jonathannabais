@@ -69,6 +69,7 @@ export const GlobalStyle = createGlobalStyle`
       text-align: left;
     }
     font-size: 46px;
+    letter-spacing: -3px;
     text-align: center;
     line-height: 1.1em;
     margin: 50px 0;
@@ -77,6 +78,7 @@ export const GlobalStyle = createGlobalStyle`
     @media only screen and (min-width: 768px) {
       font-size: 56px;
     }
+    letter-spacing: -3px;
     font-size: 50px;
     margin-bottom: 50px;
   }
@@ -87,7 +89,6 @@ export const GlobalStyle = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     color: ${props => props.theme.colors.primary.text};
-    font-weight: bold;
   }
 	
 	p {

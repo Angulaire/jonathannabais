@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const HeaderGroup = styled.header`
   @media only screen and (min-width: 768px) { 
-    padding: 0 80px;
+    padding: 40px 140px 0;
   }
   padding: 0 20px;
   background: transparent;
@@ -25,19 +25,22 @@ const HeaderGroup = styled.header`
   flex-direction: row;
 `
 
-class Header extends React.Component {
-  
-  
-  render() {
-    return (     
-      <HeaderGroup >
-        <a href="/">
-          <Logo />
-        </a>
-        <Nav showNav/>
-      </HeaderGroup>
-    )
-  }
+type HeaderProps = { 
+  navbar: any;
+}
+
+const Header = ({ navbar }: HeaderProps) => {
+  return (     
+    <HeaderGroup >
+      <a href="/">
+        <Logo />
+      </a>
+      <Nav
+        navbar={navbar}
+        showNav
+      />
+    </HeaderGroup>
+  )
 }
 
 export default Header;

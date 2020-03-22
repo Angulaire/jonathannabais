@@ -46,7 +46,6 @@ const BlogIndex = () => {
         const otherArticles = articles.slice(1, articles.length);
         return (
           <>
-            <Header />
             <Link href={'/blog/[id]'} as={`/blog/${lastArticle.slug}`}>
               <a>
                 <StyledRow justify="start" align="middle">

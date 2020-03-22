@@ -2,6 +2,10 @@ import gql from "graphql-tag";
 
 const HOME_QUERY = gql`  
   query Home {
+    navigation {
+      navbar
+      footer
+    }
     home{
       content {
         __typename

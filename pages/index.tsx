@@ -14,7 +14,7 @@ import TextGrid from '../components/section/TextGrid';
 import Testimonials from '../components/section/Testimonials'
 import Tools from '../components/section/Tools';
 
-const IndexPage = ({ home }) => {
+const IndexPage = ({ home, navigation }) => {
   const router = useRouter()
 
   // If the page is not yet generated, this will be displayed
@@ -31,6 +31,7 @@ const IndexPage = ({ home }) => {
             <Hero
               title={section.heroTitle}
               imageUrl={section.image.url}
+              navbar={navigation.navbar}
               color={section.layout.color}
               space={section.layout.space}
             />
@@ -87,7 +88,9 @@ const IndexPage = ({ home }) => {
           )
         }
       })}
-      <Footer />
+      <Footer
+        navigation={navigation.footer}
+      />
     </>
   )
 }
@@ -95,7 +98,8 @@ const IndexPage = ({ home }) => {
 export const getStaticProps: GetStaticProps = async context => {
   const data = await request(`${process.env.API_BASE_URL}/graphql`, print(HOME_QUERY))
   const home = await data.home
-  return { props: { home } }
+  const navigation = await data.navigation
+  return { props: { home, navigation } }
 }
 
 export default IndexPage

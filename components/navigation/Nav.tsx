@@ -14,18 +14,18 @@ const NavGroup = styled.nav`
 
 type NavProps = {
   showNav: boolean;
+  navbar: any;
 };
 
-const Nav = ({ showNav }: NavProps) => {
+const Nav = ({ showNav, navbar }: NavProps) => {
   if (showNav) {
     return (
       <NavGroup>
-        <Link href="/blog/index" as="/blog">
-          <a>Journal</a>
-        </Link>
-        <Link href="/">
-          <a>Contact</a>
-        </Link>
+        {navbar.map(link =>
+          <Link href={link.href} as={link.as}>
+            <a>{link.name}</a>
+          </Link>
+        )}
       </NavGroup>
     );
   } else return null

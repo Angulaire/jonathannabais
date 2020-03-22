@@ -79,13 +79,16 @@ const CopyrightFooter = styled(Row)`
     font-size: 14px;
     color: white;
   }
-
 `
 
-const Footer = () => {
+type FooterProps = {
+  navigation: any;
+}
+
+const Footer = ({ navigation }: FooterProps) => {
   return (
     <FooterGroup>
-      <Row justify="left" align="top" gutter={[8, 8]}>
+      <Row justify="start" align="top" gutter={[8, 8]}>
         <SEO xs={24} md={8}>
           <h3>Jonathan</h3>
           <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat.</p>  
@@ -104,62 +107,18 @@ const Footer = () => {
             </ul>
           </Socials>
         </SEO>
-        <Col xs={12} md={{ span: 3, offset: 1 }}>
-          <h4>SERVICES</h4>
-          <Sitemap>
-            <li>
-              <a>Index</a>
-            </li>
-            <li>
-              <a>Marketing</a>
-            </li>
-            <li>
-              <a>Tarifs</a>
-            </li>
-          </Sitemap>
-        </Col>
-        <Col xs={12} md={4}>
-          <h4>EN SAVOIR PLUS</h4>
-          <Sitemap>
-            <li>
-              <a>Crème</a>
-            </li>
-            <li>
-              <a>Malt</a>
-            </li>
-            <li>
-              <a>Hall of Fame</a>
-            </li>
-          </Sitemap>
-        </Col>
-        <Col xs={12} md={4}>
-          <h4>INFORMATIONS</h4>
-          <Sitemap>
-            <li>
-              <a>Journal</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
-            <li>
-              <a>RGPB</a>
-            </li>
-          </Sitemap>
-        </Col>
-        <Col xs={12} md={4}>
-          <h4>CONTACT</h4>
-          <Sitemap>
-            <li>
-              <a>Rendez-vous</a>
-            </li>
-            <li>
-              <a>Email</a>
-            </li>
-            <li>
-              <a>Devis</a>
-            </li>
-          </Sitemap>
-        </Col>
+        {navigation.map(category =>
+          <Col xs={12} md={{ span: 3, offset: 1 }}>
+            <h4>{category.categoryName}</h4>
+            <Sitemap>
+              {category.links.map(link => 
+                <li>
+                  <a href={link.href} target={link.target}>{link.name}</a>
+                </li>
+              )}
+            </Sitemap>
+          </Col>
+        )}
       </Row>
       <CopyrightFooter justify="space-between" align="middle">
         <Col xs={24} md={12}>
@@ -188,7 +147,7 @@ const Footer = () => {
           </svg>
         </Col>
         <Col xs={24} md={12}>
-          <p>© Made with ❤️ by <a href="http://angulaire.io/" target="_blank">Angulaire</a></p>
+          <p>© Powered by <a href="http://angulaire.io/" target="_blank">Angulaire</a></p>
         </Col>
       </CopyrightFooter>
     </FooterGroup>
