@@ -1,17 +1,22 @@
-import React from 'react'
-import App from 'next/app'
-import TagManager from 'react-gtm-module'
+import React from 'react';
+import App from 'next/app';
+import TagManager from 'react-gtm-module';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config'
 import Providers from '../components/global/Providers';
 import { ApolloProvider } from "@apollo/react-hooks";  
+import { ApolloClient, NormalizedCacheObject } from "apollo-boost";
 import withData from "../utils/apollo";
 
 const tagManagerArgs = {
-  gtmId: 'GTM-KMVLCMK'
+  gtmId: 'GTM-MBFH9W2'
 }
 
-class MyApp extends App {
+interface IProps {
+  apollo: ApolloClient<NormalizedCacheObject>;
+}
+
+class MyApp extends App<IProps> {
   componentDidMount () {
     TagManager.initialize(tagManagerArgs)
   }

@@ -26,6 +26,18 @@ const LayoutGroup = styled('div')(
         bg: 'transparent',
       },
     },
+  }),
+  variant({
+    prop: 'space',
+    variants: {
+      default: {
+        padding: ['40px 20px', '80px 140px']
+      },
+      marginLeft: {
+        padding: ["40px 20px", "80px 140px 80px 70px"],
+        ml: ["0", "70px"]
+      }
+    }
   })
 )
 
@@ -33,7 +45,8 @@ const LayoutGroup = styled('div')(
 const Layout = ({ children, color, space }) => {
   return (
     <LayoutGroup 
-      color={color} 
+      color={color}
+      space={space}
       m={space?.m}
       mt={space?.mt}
       mr={space?.mr}

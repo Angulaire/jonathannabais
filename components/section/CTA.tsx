@@ -51,6 +51,7 @@ const CTA = ({ title, button, color, space, shapes }: CtaProps) => {
           backgroundImage={`url(${shape.image.url})`}
         />
       )}
+      {console.log(shapes)}
     </Section>
   )
 }
