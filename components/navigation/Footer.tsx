@@ -147,7 +147,7 @@ const Footer = ({ navigation }: FooterProps) => {
           </svg>
         </Col>
         <Col xs={24} md={12}>
-          <p>© Made with love from the team of<a href="http://angulaire.io/" target="_blank">Angulaire</a></p>
+          <p>© Made with love from the team of <a href="http://angulaire.io/" target="_blank">Angulaire</a></p>
         </Col>
       </CopyrightFooter>
     </FooterGroup>
