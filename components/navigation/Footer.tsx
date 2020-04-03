@@ -7,10 +7,10 @@ const FooterGroup = styled.footer`
   a {
     color: white;
   }
-  margin: 100px 20px 20px;
+  margin: 100px 20px 40px;
   text-align: center;
   @media only screen and (min-width: 768px) { 
-    margin: 100px 80px 20px;
+    margin: 100px 80px 30px;
     text-align: left;
   }
 `
@@ -91,7 +91,7 @@ const Footer = ({ navigation }: FooterProps) => {
       <Row justify="start" align="top" gutter={[8, 8]}>
         <SEO xs={24} md={8}>
           <h3>Jonathan</h3>
-          <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat.</p>  
+          <p>J’ai eu le plaisir de collaborer avec mes équipes sur plus de 350 projets en 6 ans.</p>  
           <Socials>
             <ul>
               <li>
@@ -147,7 +147,7 @@ const Footer = ({ navigation }: FooterProps) => {
           </svg>
         </Col>
         <Col xs={24} md={12}>
-          <p>© Powered by <a href="http://angulaire.io/" target="_blank">Angulaire</a></p>
+          <p>© Made with love from the team of<a href="http://angulaire.io/" target="_blank">Angulaire</a></p>
         </Col>
       </CopyrightFooter>
     </FooterGroup>
