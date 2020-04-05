@@ -13,6 +13,10 @@ const FooterGroup = styled.footer`
     margin: 100px 80px 30px;
     text-align: left;
   }
+
+  h4 {
+    font-weight: 600;
+  }
 `
 
 const Sitemap = styled.ul`
@@ -20,6 +24,7 @@ const Sitemap = styled.ul`
   padding: 0;
   li {
     margin-right: 12px;
+    margin-bottom: 8px;
   }
 `
 
@@ -32,6 +37,8 @@ const SEO = styled(Col)`
   p {
     color: white;
     font-size: 14px;
+    width: 80%;
+    line-height: 24px;
   }
   margin-bottom: 80px;
   @media only screen and (min-width: 768px) { 
@@ -69,7 +76,7 @@ const Socials = styled.div`
 const CopyrightFooter = styled(Row)`
   border-top: 1px solid white;
   margin-top: 20px;
-  padding-top: 20px;
+  padding-top: 30px;
 
   p {
     @media only screen and (min-width: 768px) { 
@@ -88,7 +95,7 @@ type FooterProps = {
 const Footer = ({ navigation }: FooterProps) => {
   return (
     <FooterGroup>
-      <Row justify="start" align="top" gutter={[8, 8]}>
+      <Row justify="start" align="top" gutter={[8, 8]} style={{marginBottom: "55px"}}>
         <SEO xs={24} md={8}>
           <h3>Jonathan</h3>
           <p>J’ai eu le plaisir de collaborer avec mes équipes sur plus de 350 projets en 6 ans.</p>  

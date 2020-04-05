@@ -18,6 +18,20 @@ const StyledCarousel = styled(Carousel)`
   img {
     margin: 20px 0;
   }
+
+  p {
+    color: ${props => props.theme.colors.secondary.text};
+  }
+
+  .quote {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 200;
+  }
+
+  .signature {
+    margin: 30px 0;
+  }
 `
 
 type TestimonialsProps = {
@@ -79,8 +93,8 @@ class Testimonials extends React.Component<TestimonialsProps> {
                 {testimonials.map(testimonial =>
                   <div>
                     <img src={testimonial.icon.url}/>
-                    <p>{testimonial.testimonial}</p>
-                    <p>{`${testimonial.name.toUpperCase()} - ${testimonial.compagnyName.toUpperCase()}`}</p>
+                    <p className="quote">{testimonial.testimonial}</p>
+                    <p className="signature">{`${testimonial.name.toUpperCase()} - ${testimonial.compagnyName.toUpperCase()}`}</p>
                   </div>
                 )}
               </StyledCarousel>

@@ -46,24 +46,28 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Averta;
     src: url(/fonts/Averta-Bold.woff);
     font-weight: bold;
-    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Averta;
+    src: url(/fonts/Averta-Light.woff);
+    font-weight: 200;
   }
 
   @font-face {
     font-family: Averta;
     src: url(/fonts/Averta.woff);
     font-weight: normal;
-    font-style: normal;
   }
   
   body {
     font-family: Averta;
-    font-weight: normal;
     font-feature-settings: normal;
     font-variant: normal;
     -webkit-font-smoothing: antialiased;
 		background-color: ${props => props.theme.colors.primary.bg};
   }
+
 	h1 {
     @media only screen and (min-width: 768px) { 
       font-size: 48px;
@@ -75,6 +79,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.1em;
     margin: 50px 0;
   }
+
   h2 {
     @media only screen and (min-width: 768px) {
       font-size: 56px;

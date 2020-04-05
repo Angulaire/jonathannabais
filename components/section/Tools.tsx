@@ -45,6 +45,10 @@ const InfoHover = styled.div`
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
+    color: #3576C7;
+    margin-top: -30px;
+    margin-bottom: 60px;
+    font-size: 16px;
   }
 
   h2:hover {
@@ -79,6 +83,7 @@ const Tools = ({ title, color, space, tools }: ToolsProps) => {
       > 
         <InfoHover>
           <h2>{title}</h2>
+          <p id="info-hover">*Mes clients</p>
           <Row justify="center" align="top" gutter={[16, 16]}>
             {tools.map((tool, index) =>
               <Col xs={12} md={4}>
@@ -93,7 +98,6 @@ const Tools = ({ title, color, space, tools }: ToolsProps) => {
               </Col>
             )}
           </Row>
-          <p id="info-hover">*Nos clients</p>
         </InfoHover>
       </Layout>
     </section>
