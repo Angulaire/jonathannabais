@@ -13,6 +13,7 @@ const HOME_QUERY = gql`
           heroTitle: title
           image {
             url
+            provider_metadata
           }
           layout {
             color

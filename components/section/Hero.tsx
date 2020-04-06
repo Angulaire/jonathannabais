@@ -3,7 +3,8 @@ import { Row, Col } from 'antd';
 import Layout from '../global/Layout'
 import Header from '../navigation/Header';
 import styled from 'styled-components';
-import { position, layout, background } from 'styled-system'
+import { position, layout, background } from 'styled-system';
+import {Image, Transformation, CloudinaryContext} from 'cloudinary-react';
 import AOS from 'aos';
 
 const Shape = styled.div`
@@ -29,7 +30,10 @@ const ShapeAvatar = styled.div`
 
 type HeroProps = { 
   title: string;
-  imageUrl: string;
+  image: {
+    url: string;
+    provider_metadata: any;
+  }
   navbar: any;
   color: string;
   space: string;
@@ -42,7 +46,7 @@ class Hero extends React.Component<HeroProps> {
   }
 
   render() {
-    const { title, imageUrl, navbar, color, space } = this.props
+    const { title, image, navbar, color, space } = this.props
     return (
       <HeroBg>
         <Header
@@ -71,6 +75,7 @@ class Hero extends React.Component<HeroProps> {
                 <Shape
                   position="absolute"
                   bottom="0"
+                  left="0"
                   width={["131px", "327px"]}
                   height={["133px", "331px"]}
                   backgroundImage="url(https://res.cloudinary.com/angulaire/image/upload/v1584633151/oyrzugciumc6f0nscc0a.svg)"
@@ -87,7 +92,14 @@ class Hero extends React.Component<HeroProps> {
                 />
               </div>
               <ShapeAvatar data-aos='zoom-out' data-aos-duration="2000">
-                <img src={imageUrl} width="100%" alt="Jonathan Nabais, CEO @Angulaire"/>
+                <Image 
+                  cloudName="angulaire" 
+                  publicId={image.provider_metadata.public_id} 
+                  crop="scale" 
+                  alt="Jonathan Nabais, CEO @Angulaire"
+                  responsive
+                  width="auto"
+                />
               </ShapeAvatar>
             </Col>
           </Row>

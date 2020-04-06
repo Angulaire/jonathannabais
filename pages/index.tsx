@@ -31,7 +31,7 @@ const IndexPage = ({ home, navigation }) => {
             <Hero
               key={i}
               title={section.heroTitle}
-              imageUrl={section.image.url}
+              image={section.image}
               navbar={navigation.navbar}
               color={section.layout.color}
               space={section.layout.space}
