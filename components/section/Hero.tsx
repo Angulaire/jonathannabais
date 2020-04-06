@@ -3,59 +3,24 @@ import { Row, Col } from 'antd';
 import Layout from '../global/Layout'
 import Header from '../navigation/Header';
 import styled from 'styled-components';
+import { position, layout, background } from 'styled-system'
 import AOS from 'aos';
 
+const Shape = styled.div`
+  ${layout}
+  ${position}
+  ${background}
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+`
+
 const HeroBg = styled.div`
-  background: url(/hero-bg.png) no-repeat center center;
+  background: url(https://res.cloudinary.com/angulaire/image/upload/f_auto/v1586182535/suhg8eda7lfcztwpy71x.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-`
-
-const ShapeOne = styled.div`
-  position: absolute;
-  top: 80px;
-  left: 10px;
-  img {
-    width: 81px;
-  }
-  @media only screen and (min-width: 768px) {
-    top: 40px;
-    left: -40px;
-    img {
-      width: 202px;
-    }
-  }
-`
-
-const ShapeTwo = styled.div`
-  position: absolute;
-  bottom: 0;
-  img {
-    width: 131px;
-  }
-
-  @media only screen and (min-width: 768px) {
-    img {
-      width: 310px;
-    }
-  }
-`
-
-const ShapeTree = styled.div`
-  position: absolute;
-  right: 0;
-  top: 80px;
-  img {
-    width: 150px;
-  }
-  @media only screen and (min-width: 768px) {
-    img {
-      width: 300px;
-      right: 50px;
-    }
-  }
 `
 
 const ShapeAvatar = styled.div`
@@ -92,15 +57,35 @@ class Hero extends React.Component<HeroProps> {
               <h1>{title}</h1>
             </Col>
             <Col xs={24} md={13}>
-              <ShapeOne data-aos="fade-up-left" data-aos-duration="500">
-                <img src="https://res.cloudinary.com/angulaire/image/upload/v1584633151/rox4bdvcwuvmmfv7uesy.svg"/>
-              </ShapeOne>
-              <ShapeTwo data-aos="fade-left" data-aos-duration="600">
-                <img src="https://res.cloudinary.com/angulaire/image/upload/v1584633151/oyrzugciumc6f0nscc0a.svg"/>
-              </ShapeTwo>
-              <ShapeTree data-aos="fade-left" data-aos-duration="700">
-                <img src="https://res.cloudinary.com/angulaire/image/upload/v1584633151/aeiogpgsgpqsldquwzk5.svg"/>
-              </ShapeTree>
+              <div data-aos="fade-up-left" data-aos-duration="500">
+                <Shape
+                  position="absolute"
+                  top={["80px", "40px"]}
+                  left={["10px", "-40px"]}
+                  width={["81px", "202px"]}
+                  height={["83px", "206px"]}
+                  backgroundImage="url(https://res.cloudinary.com/angulaire/image/upload/v1584633151/rox4bdvcwuvmmfv7uesy.svg)"
+                />
+              </div>
+              <div data-aos="fade-left" data-aos-duration="600">
+                <Shape
+                  position="absolute"
+                  bottom="0"
+                  width={["131px", "327px"]}
+                  height={["133px", "331px"]}
+                  backgroundImage="url(https://res.cloudinary.com/angulaire/image/upload/v1584633151/oyrzugciumc6f0nscc0a.svg)"
+                />
+              </div>
+              <div data-aos="fade-left" data-aos-duration="700">
+                <Shape
+                  position="absolute"
+                  top="80px"
+                  right={["0", "50px"]}
+                  width={["150px", "300px"]}
+                  height={["150px", "300px"]}
+                  backgroundImage="url(https://res.cloudinary.com/angulaire/image/upload/v1584633151/aeiogpgsgpqsldquwzk5.svg)"
+                />
+              </div>
               <ShapeAvatar data-aos='zoom-out' data-aos-duration="2000">
                 <img src={imageUrl} width="100%" alt="Jonathan Nabais, CEO @Angulaire"/>
               </ShapeAvatar>

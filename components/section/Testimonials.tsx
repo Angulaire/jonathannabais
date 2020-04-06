@@ -92,7 +92,7 @@ class Testimonials extends React.Component<TestimonialsProps> {
               >
                 {testimonials.map((testimonial, i) =>
                   <div key={i}>
-                    <img src={testimonial.icon.url}/>
+                    <img src={testimonial.icon.url} alt="Quote icon" loading="lazy"/>
                     <p className="quote">{testimonial.testimonial}</p>
                     <p className="signature">{`${testimonial.name.toUpperCase()} - ${testimonial.compagnyName.toUpperCase()}`}</p>
                   </div>

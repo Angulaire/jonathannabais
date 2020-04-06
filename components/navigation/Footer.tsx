@@ -119,7 +119,7 @@ const Footer = ({ navigation }: FooterProps) => {
             <Sitemap>
               {category.links.map((link, i) => 
                 <li key={i}>
-                  <a href={link.href} target={link.target}>{link.name} rel={link.rel}</a>
+                  <a href={link.href} target={link.target} rel={link.rel}>{link.name}</a>
                 </li>
               )}
             </Sitemap>
@@ -128,7 +128,7 @@ const Footer = ({ navigation }: FooterProps) => {
       </Row>
       <CopyrightFooter justify="space-between" align="middle">
         <Col xs={24} md={12}>
-          <img src="https://res.cloudinary.com/angulaire/image/upload/v1586173969/yyltxmenevfobd2l4l2f.svg" alt="Logo Angulaire"/>
+          <img src="https://res.cloudinary.com/angulaire/image/upload/v1586173969/yyltxmenevfobd2l4l2f.svg" alt="Logo Angulaire" loading="lazy"/>
         </Col>
         <Col xs={24} md={12}>
           <p>© Made with love from the team of <a href="http://angulaire.io/" target="_blank">Angulaire</a></p>
