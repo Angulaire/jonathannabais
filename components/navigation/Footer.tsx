@@ -16,6 +16,7 @@ const FooterGroup = styled.footer`
 
   h4 {
     font-weight: 600;
+    padding-bottom: 20px;
   }
 `
 
@@ -24,25 +25,29 @@ const Sitemap = styled.ul`
   padding: 0;
   li {
     margin-right: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 `
 
 const SEO = styled(Col)`
   h3 {
     line-height: 1;
+    padding-bottom: 20px;
   }
   position: relative;
   p {
     color: white;
     font-size: 14px;
     line-height: 24px;
+    
   }
   margin-bottom: 80px;
   @media only screen and (min-width: 768px) { 
     margin-bottom: 40px;
-    padding-right: 20px;
     border-right: 1px solid white;
+    p {
+      width: 80%;
+    }
   }
 
 `
