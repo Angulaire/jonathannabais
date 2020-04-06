@@ -38,8 +38,9 @@ const CTA = ({ title, button, color, space, shapes }: CtaProps) => {
           </Col>
         </Row>
       </Layout>
-      {shapes.map(shape =>
+      {shapes.map((shape, i) =>
         <Shape
+          key={i}
           position="absolute"
           zIndex={shape.position?.zIndex}
           top={shape.position?.top}
@@ -51,7 +52,6 @@ const CTA = ({ title, button, color, space, shapes }: CtaProps) => {
           backgroundImage={`url(${shape.image.url})`}
         />
       )}
-      {console.log(shapes)}
     </Section>
   )
 }

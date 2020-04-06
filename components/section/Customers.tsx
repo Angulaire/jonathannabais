@@ -54,9 +54,9 @@ const Customers = ({ title, customers, color, space }: CustomersProps) => {
       >
         <h2>{title}</h2>
         <Row justify="center" align="middle" gutter={[16, 16]}>
-          {customers.map((customer, index) => (
-            <Col xs={24} md={8}>
-              <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 100}>
+          {customers.map((customer, i) => (
+            <Col xs={24} md={8} key={i}>
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay={i * 100}>
                 <CustomerCard>
                   <CardImage>
                     <a style={{backgroundImage: `url(${customer.logo.url})`}}/>

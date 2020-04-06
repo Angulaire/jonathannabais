@@ -25,10 +25,11 @@ const IndexPage = ({ home, navigation }) => {
 
   return (
     <>
-      {home.content.map(section => {
+      {home.content.map((section, i) => {
         if ( section.__typename === "ComponentHero") {
           return (
             <Hero
+              key={i}
               title={section.heroTitle}
               imageUrl={section.image.url}
               navbar={navigation.navbar}
@@ -40,6 +41,7 @@ const IndexPage = ({ home, navigation }) => {
         if ( section.__typename === "ComponentToolsList") {
           return (
             <Tools
+              key={i}
               title={section.title}
               tools={section.tool}
               color={section.layout.color}
@@ -50,6 +52,7 @@ const IndexPage = ({ home, navigation }) => {
         if ( section.__typename === "ComponentCustomersList") {
           return (
             <Customers 
+              key={i} 
               title={section.title}
               customers={section.customer}
               color={section.layout.color}
@@ -60,6 +63,7 @@ const IndexPage = ({ home, navigation }) => {
         if ( section.__typename === "ComponentTextGrid") {
           return (
             <TextGrid
+              key={i} 
               title={section.title}
               textCards={section.textCard}
               color={section.layout.color}
@@ -70,6 +74,7 @@ const IndexPage = ({ home, navigation }) => {
         if ( section.__typename === "ComponentTestimonialsSlider") {
           return (
             <Testimonials
+              key={i} 
               testimonials={section.testimonials}
               color={section.layout.color}
               space={section.layout.space}
@@ -79,6 +84,7 @@ const IndexPage = ({ home, navigation }) => {
         if ( section.__typename === "ComponentCta") {
           return (
             <CTA 
+              key={i} 
               title={section.ctaTitle}
               button={section.button}
               color={section.layout.color}

@@ -73,8 +73,8 @@ class Testimonials extends React.Component<TestimonialsProps> {
                 asNavFor={this.state.nav2}
                 ref={slider => (this.slider1 = slider)}
               >
-                {testimonials.map(testimonial =>
-                  <div>
+                {testimonials.map((testimonial, i) =>
+                  <div key={i}>
                     <TestimonialCard 
                       testimonial={testimonial}
                       shapeOneUrl="https://res.cloudinary.com/angulaire/image/upload/v1584626507/jstovczxcz3ewsjg6ap2.svg"
@@ -90,8 +90,8 @@ class Testimonials extends React.Component<TestimonialsProps> {
                 asNavFor={this.state.nav1}
                 ref={slider => (this.slider2 = slider)}
               >
-                {testimonials.map(testimonial =>
-                  <div>
+                {testimonials.map((testimonial, i) =>
+                  <div key={i}>
                     <img src={testimonial.icon.url}/>
                     <p className="quote">{testimonial.testimonial}</p>
                     <p className="signature">{`${testimonial.name.toUpperCase()} - ${testimonial.compagnyName.toUpperCase()}`}</p>

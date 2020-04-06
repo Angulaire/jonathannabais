@@ -21,8 +21,8 @@ const Nav = ({ showNav, navbar }: NavProps) => {
   if (showNav) {
     return (
       <NavGroup>
-        {navbar.map(link =>
-          <Link href={link.href} as={link.as}>
+        {navbar.map((link, i) =>
+          <Link href={link.href} as={link.as} key={i}>
             <a>{link.name}</a>
           </Link>
         )}

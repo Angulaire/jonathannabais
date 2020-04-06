@@ -85,9 +85,9 @@ const Tools = ({ title, color, space, tools }: ToolsProps) => {
           <h2>{title}</h2>
           <p id="info-hover">*Mes clients</p>
           <Row justify="center" align="top" gutter={[16, 16]}>
-            {tools.map((tool, index) =>
-              <Col xs={12} md={4}>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 100}>
+            {tools.map((tool, i) =>
+              <Col xs={12} md={4} key={i}>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay={i * 100}>
                   <ToolCard>
                     <CardImage>
                       <a style={{backgroundImage: `url(${tool.logo.url})`}}/>
