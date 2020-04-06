@@ -68,6 +68,7 @@ const IndexPage = ({ home, navigation }) => {
               textCards={section.textCard}
               color={section.layout.color}
               space={section.layout.space}
+              shapes={section.shapes}
             />
           )
         }

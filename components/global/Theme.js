@@ -83,9 +83,11 @@ export const GlobalStyle = createGlobalStyle`
   h2 {
     @media only screen and (min-width: 768px) {
       font-size: 56px;
+      line-height: 1;
     }
     letter-spacing: -3px;
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 48px;
     margin-bottom: 50px;
   }
 
@@ -99,9 +101,9 @@ export const GlobalStyle = createGlobalStyle`
 	
 	p {
 		color: ${props => props.theme.colors.grey};
-		font-size: 18px;
+		font-size: 17px;
 		font-weight: normal;
-		line-height: 1.4;
+		line-height: 28px;
     margin-bottom: 1rem;
 	}
 	

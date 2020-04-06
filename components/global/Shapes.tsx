@@ -22,8 +22,9 @@ const Shapes = ({ shapes }: IProps) => {
   
   return (
     <>
-      {shapes.map(shape =>
+      {shapes.map((shape, i) =>
         <Shape
+          key={i}
           position="absolute"
           zIndex={shape.position?.zIndex}
           top={shape.position?.top}

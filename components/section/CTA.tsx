@@ -1,19 +1,12 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
 import Layout from '../global/Layout'
-import { position, layout, background } from 'styled-system'
+import Shapes from '../global/Shapes'
 
-const Section = styled.section`
-  position: relative;
-`
-
-const Shape = styled.div`
-  ${layout}
-  ${position}
-  ${background}
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
+const Link = styled.a`
+  color: ${props => props.theme.colors.secondary.text};
+  font-size: 26px;
+  text-decoration: underline;
 `
 
 type CtaProps = {
@@ -26,7 +19,7 @@ type CtaProps = {
 
 const CTA = ({ title, button, color, space, shapes }: CtaProps) => {
   return (
-    <Section>
+    <section>
       <Layout
         color={color} 
         space={space}
@@ -34,25 +27,12 @@ const CTA = ({ title, button, color, space, shapes }: CtaProps) => {
         <Row justify="start" align="middle">
           <Col xs={24} md={24}>
             <h2>{title}</h2>
-            <Button type={button.type}>{button.text}</Button>
+            <Link href={button.href}>{button.text}</Link>
           </Col>
         </Row>
+        <Shapes shapes={shapes}/>
       </Layout>
-      {shapes.map((shape, i) =>
-        <Shape
-          key={i}
-          position="absolute"
-          zIndex={shape.position?.zIndex}
-          top={shape.position?.top}
-          right={shape.position?.right}
-          bottom={shape.position?.bottom}
-          left={shape.position?.left}
-          width={shape.size?.width}
-          height={shape.size?.height}
-          backgroundImage={`url(${shape.image.url})`}
-        />
-      )}
-    </Section>
+    </section>
   )
 }
 export default CTA

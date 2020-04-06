@@ -30,6 +30,13 @@ const HOME_QUERY = gql`
             color
             space
           }
+          shapes {
+            size
+            position
+            image {
+              url
+            }
+          }
         }
         ... on ComponentCustomersList {
           title
@@ -62,6 +69,7 @@ const HOME_QUERY = gql`
           button {
             text
             type
+            href
           }
           layout {
             color

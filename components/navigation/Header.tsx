@@ -32,7 +32,7 @@ type HeaderProps = {
 const Header = ({ navbar }: HeaderProps) => {
   return (     
     <HeaderGroup >
-      <a href="https://jonathannabais.fr">
+      <a href="/" rel="nofollow">
         <Logo />
       </a>
       <Nav
