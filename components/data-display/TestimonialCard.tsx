@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Shapes from '../global/Shapes';
 
 const Card = styled.div`
   @media only screen and (min-width: 768px) { 
@@ -41,19 +42,6 @@ const CardAvatarImage = styled.div`
   background-repeat: no-repeat;
 `
 
-const ShapeOne = styled.img`
-  @media only screen and (min-width: 768px) { 
-    top: -70px;
-    right: -80px;
-    width: 340px;
-  }
-  top: -60px;
-  right: -60px;
-  width: 200px;
-  position: absolute;
-  z-index: -1;
-`
-
 const ShapTwo = styled.img`
   @media only screen and (min-width: 768px) { 
     bottom: -70px;
@@ -84,8 +72,38 @@ const TestimonialCard = ({ testimonial, shapeOneUrl, shapeTwoUrl }: TestimonialC
       <CardAvatarImage
         style={{backgroundImage: `url(${testimonial.avatar.url})`}}
       />
-      <ShapeOne src={shapeOneUrl}/>
-      <ShapTwo src={shapeTwoUrl}/>
+      <Shapes
+        shapes={[
+          {
+            image: {
+              url: shapeOneUrl
+            },
+            position: {
+              zIndex: "-1",
+              top: ["-60px", "-70px"],
+              right: ["-60px", "-80px"]
+            },
+            size: {
+              height: ["210px", "340px"],
+              width: ["189px", "305px"]
+            }
+          },
+          {
+            image: {
+              url: shapeTwoUrl
+            },
+            position: {
+              zIndex: "-1",
+              bottom: ["-40px", "-70px"],
+              left: ["-40px", "-70px"]
+            },
+            size: {
+              height: ["228px", "370px"],
+              width: ["228px", "370px"]
+            }
+          }
+        ]}
+      />
     </Card>
   );
 };

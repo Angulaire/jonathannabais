@@ -101,12 +101,12 @@ const Footer = ({ navigation }: FooterProps) => {
           <Socials>
             <ul>
               <li>
-                <a href="https://twitter.com/Jonathannabais" target="_blank">
+                <a href="https://twitter.com/Jonathannabais" target="_blank" rel="noopener">
                   <TwitterCircleFilled />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/jonathannabais/" target="_blank">
+                <a href="https://www.linkedin.com/in/jonathannabais/" target="_blank" rel="noopener">
                   <LinkedinFilled />
                 </a>
               </li>
@@ -131,7 +131,7 @@ const Footer = ({ navigation }: FooterProps) => {
           <img src="https://res.cloudinary.com/angulaire/image/upload/v1586173969/yyltxmenevfobd2l4l2f.svg" alt="Logo Angulaire" loading="lazy"/>
         </Col>
         <Col xs={24} md={12}>
-          <p>© Made with love from the team of <a href="http://angulaire.io/" target="_blank">Angulaire</a></p>
+          <p>© Made with love from the team of <a href="http://angulaire.io/" target="_blank" rel="noopener">Angulaire</a></p>
         </Col>
       </CopyrightFooter>
     </FooterGroup>
