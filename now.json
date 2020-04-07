@@ -9,10 +9,25 @@
     {
       "src": "/certification-digital-active-de-google",
       "status": 308,
-      "headers": { "Location": "https://jonathannabais.fr" }
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/transformer-un-visiteur-en-lecteur/",
+      "status": 308,
+      "headers": { "Location": "/" }
     },
     {
       "src": "/author/(.*)",
+      "status": 308,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/tag/(.*)",
+      "status": 308,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/wp-content/(.*)",
       "status": 308,
       "headers": { "Location": "/" }
     }
