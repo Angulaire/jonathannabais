@@ -7,6 +7,26 @@
   },
   "routes": [
     {
+      "src": "/page-sitemap.xml",
+      "status": 308,
+      "headers": { "Location": "/sitemap.xml" }
+    },
+    {
+      "src": "/portfolio-sitemap.xml",
+      "status": 308,
+      "headers": { "Location": "/sitemap.xml" }
+    },
+    {
+      "src": "/post-sitemap.xml",
+      "status": 308,
+      "headers": { "Location": "/sitemap.xml" }
+    },
+    {
+      "src": "/sitemap_index.xml",
+      "status": 308,
+      "headers": { "Location": "/sitemap.xml" }
+    },
+    {
       "src": "/certification-digital-active-de-google",
       "status": 308,
       "headers": { "Location": "/" }
@@ -28,6 +48,11 @@
     },
     {
       "src": "/wp-content/(.*)",
+      "status": 308,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/blog/page/(.*)",
       "status": 308,
       "headers": { "Location": "/" }
     }
