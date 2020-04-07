@@ -32,7 +32,7 @@ type HeaderProps = {
 const Header = ({ navbar }: HeaderProps) => {
   return (     
     <HeaderGroup >
-      <a href="">
+      <a href="/" >
         <Logo />
       </a>
       <Nav
