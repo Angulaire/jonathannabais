@@ -6,7 +6,15 @@
     }
   },
   "routes": [
-    { "src": "/certification-digital-active-de-google", "dest": "https://jonathannabais.fr" },
-    { "src": "/author/jonathan//author/jonathan/?2", "dest": "/" }
+    {
+      "src": "/certification-digital-active-de-google",
+      "status": 308,
+      "headers": { "Location": "https://jonathannabais.fr" }
+    },
+    {
+      "src": "/author/(.*)",
+      "status": 308,
+      "headers": { "Location": "/" }
+    }
   ]
 }
