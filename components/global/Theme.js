@@ -88,7 +88,7 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: -3px;
     font-size: 40px;
     line-height: 48px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   h3 {
