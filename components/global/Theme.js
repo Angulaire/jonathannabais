@@ -74,10 +74,11 @@ export const GlobalStyle = createGlobalStyle`
       text-align: left;
     }
     font-size: 46px;
-    letter-spacing: -2px;
+    letter-spacing: -2.5px;
     text-align: center;
-    line-height: 1.1em;
+    line-height: 62px;
     margin: 50px 0;
+    width: 85%;
   }
 
   h2 {
