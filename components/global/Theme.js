@@ -74,7 +74,7 @@ export const GlobalStyle = createGlobalStyle`
       text-align: left;
     }
     font-size: 46px;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
     text-align: center;
     line-height: 1.1em;
     margin: 50px 0;
