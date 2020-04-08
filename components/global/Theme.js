@@ -72,11 +72,12 @@ export const GlobalStyle = createGlobalStyle`
     @media only screen and (min-width: 768px) { 
       font-size: 48px;
       text-align: left;
+      width: 100%;
     }
     font-size: 46px;
     letter-spacing: -2.5px;
     text-align: center;
-    line-height: 62px;
+    line-height: 58px;
     margin: 50px 0;
     width: 85%;
   }
