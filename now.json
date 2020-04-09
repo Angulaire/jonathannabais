@@ -277,6 +277,116 @@
       "headers": { "Location": "/" }
     },
     {
+      "src": "/portfolio/opti/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/portfolio/skycom/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/portfolio/hono/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/portfolio/kolys/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/portfolio/off/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/portfolio/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/archive/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/portfolio/sxt-scooters/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/128842425482/httpssoundcloudcomstrehlowcrash",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/132529839012/httpssoundcloudcomboomboxcartelb2u",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/portfolio/les-transports-electriques/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/140922673352/httpssoundcloudcompierre-embroisesetsa",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/133725687202/httpssoundcloudcomclaysauterlets-go",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/128842938577/httpssoundcloudcomjailkapkawaii-magic",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/certification-digital-active-de-google/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/132875402492/httpssoundcloudcomekalimusicalina-baraz-galim",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/128848951967/httpssoundcloudcomhitmanecareslook-what-youve",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/140267720087/httpssoundcloudcomkrnesessionskrne-x-jupe-qua",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/128852077982/httpssoundcloudcomsober-robyangtze-w-manitee",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/125778387747/alert",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/128842948692/kawaii-magic",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/post/125528445497/rone-parade-hotel-garuda-edition",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
       "src": "/blog/page/(.*)",
       "status": 301,
       "headers": { "Location": "/" }
