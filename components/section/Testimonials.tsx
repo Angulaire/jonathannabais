@@ -16,7 +16,7 @@ const StyledCarousel = styled(Carousel)`
     }
   }
   img {
-    margin: 20px 0;
+    margin: 40px 0;
   }
 
   p {
@@ -27,10 +27,23 @@ const StyledCarousel = styled(Carousel)`
     font-size: 20px;
     line-height: 30px;
     font-weight: 200;
+    letter-spacing: -0.25px;
+    word-spacing: -5px;
   }
 
   .signature {
-    margin: 30px 0;
+    margin: 40px 0;
+  }
+  
+  button {
+    width: 30px;
+    height: 5px;
+    border-radius: 3px;
+    opacity: 0.1;
+  }
+
+  .slick-active {
+    opacity: 1;
   }
 `
 
