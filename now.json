@@ -52,6 +52,231 @@
       "headers": { "Location": "/" }
     },
     {
+      "src": "/10-chiffres-cles-strategie-de-contenu/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/15-avantages-que-procure-le-fait-decrire-sur-un-blog/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/500-premiers-abonnes-sur-twitter-en-30-jours/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/6-avantages-du-trafic-naturel/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/7-insights-google-analytics/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/8-erreurs-commises-sur-les-reseaux-sociaux/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/8-erreurs-de-design-sur-le-referencement/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/8-etapes-ecrire-article-parfait/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/ameliorer-temps-de-chargement/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/audit-seo/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/blog-levier-marketing/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/comprendre-content-marketing/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/consultant-en-marketing/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/definition-referencement/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/des-longs-contenus-sont-ils-forcement-mieux/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/ecrire-pour-le-web/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/envoyer-des-notifications-depuis-votre-blog/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/facteurs-de-positionnement/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/faire-une-sauvegarde-de-son-wordpress/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/freelance-consultant-inbound-marketing/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/gerer-les-flux-information/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/glossaire/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/google-strategie-content-marketing/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/guide-progression-de-lecture/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/lautomatisation-du-marketing/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/mon-premier-article/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/optimiser-performance-commerciale/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/optimiser-referencement/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/partager-le-contenu-des-autres/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/personnel/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/pourquoi-strategie-de-contenu/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/preuve-sociale-importante-pour-votre-site/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/questions-consultant-en-inbound-marketing/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/referencement-seo/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/referencement/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/reformez-vos-contenus/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/reseaux-sociaux/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/search-engine-optimization-seo/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/search-experience-optimization/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/soumettre-son-site-a-google/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/stimuler-productivite-freelance/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/strategie-de-contenu/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/strategie-inbound-marketing/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/utiliser-google-comme-un-expert/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
+      "src": "/wordpress/",
+      "status": 301,
+      "headers": { "Location": "/" }
+    },
+    {
       "src": "/blog/page/(.*)",
       "status": 301,
       "headers": { "Location": "/" }
