@@ -35,7 +35,7 @@ const TextGrid = ({ title, textCards, color, space, shapes }: TextGridProps) => 
         space={space}
       >
         <h2>{title}</h2>
-        <Row justify="center" align="top" gutter={[40, 48]}>
+        <Row justify="center" align="top" gutter={[48, 48]}>
         {textCards.map((textCard, i) =>
           <Col xs={24} md={8} key={i}>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay={i * 100}>
