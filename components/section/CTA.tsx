@@ -7,6 +7,14 @@ const Link = styled.a`
   color: ${props => props.theme.colors.secondary.text};
   font-size: 26px;
   text-decoration: underline;
+
+  @media only screen and (min-width: 768px) {
+    padding-left: 10px;
+  }
+`
+
+const StyledTitle = styled.h2`
+  margin-bottom: 50px;
 `
 
 type CtaProps = {
@@ -26,7 +34,7 @@ const CTA = ({ title, button, color, space, shapes }: CtaProps) => {
       >
         <Row justify="start" align="middle">
           <Col xs={24} md={24}>
-            <h2>{title}</h2>
+            <StyledTitle>{title}</StyledTitle>
             <Link href={button.href}>{button.text}</Link>
           </Col>
         </Row>
