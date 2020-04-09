@@ -27,14 +27,12 @@ const StyledCarousel = styled(Carousel)`
     font-size: 20px;
     line-height: 32px;
     font-weight: 200;
-    letter-spacing: -0.25px;
-    word-spacing: -5px;
+    letter-spacing: -0.5px;
   }
 
   .signature {
     margin: 40px 0;
     letter-spacing: -0.5px;
-    word-spacing: -4px;
     font-size: 15px;
   }
   
