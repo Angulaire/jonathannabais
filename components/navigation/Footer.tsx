@@ -102,7 +102,7 @@ const Footer = ({ navigation }: FooterProps) => {
       <Row justify="start" align="top" style={{marginBottom: "55px"}}>
         <SEO xs={24} md={8}>
           <h3>Jonathan</h3>
-          <p>J’ai eu le plaisir de collaborer avec mes équipes sur plus de 350 projets en 6 ans.</p>  
+          <p>Freelance depuis 2014, j’ai fondé en 2018 le studio Angulaire afin d’accompagner mes clients avec une équipe encore plus pointue.</p>  
           <Socials>
             <ul>
               <li>
@@ -136,7 +136,7 @@ const Footer = ({ navigation }: FooterProps) => {
           <img src="https://res.cloudinary.com/angulaire/image/upload/v1586173969/yyltxmenevfobd2l4l2f.svg" alt="Logo Angulaire" loading="lazy"/>
         </Col>
         <Col xs={24} md={12}>
-          <p>© Made with love from the team of <a href="http://angulaire.io/" target="_blank" rel="noopener">Angulaire</a></p>
+          <p>© Merci à toute l'équipe <a href="http://angulaire.io/" target="_blank" rel="noopener">Angulaire</a></p>
         </Col>
       </CopyrightFooter>
     </FooterGroup>
