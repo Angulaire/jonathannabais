@@ -25,7 +25,7 @@ const StyledCarousel = styled(Carousel)`
 
   .quote {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 32px;
     font-weight: 200;
     letter-spacing: -0.25px;
     word-spacing: -5px;
@@ -33,9 +33,12 @@ const StyledCarousel = styled(Carousel)`
 
   .signature {
     margin: 40px 0;
+    letter-spacing: -0.5px;
+    word-spacing: -4px;
+    font-size: 15px;
   }
   
-  button {
+  .ant-carousel .slick-dots li button {
     width: 30px;
     height: 5px;
     border-radius: 3px;
@@ -44,6 +47,7 @@ const StyledCarousel = styled(Carousel)`
 
   .slick-active {
     opacity: 1;
+    width: 30px;
   }
 `
 
