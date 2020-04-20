@@ -101,10 +101,11 @@ class Hero extends React.Component<HeroProps> {
                 <ImageGroup>
                   <Image 
                     cloudName="angulaire"
+                    width="auto"
                     dpr="auto"
                     responsive
                     responsiveUseBreakpoints="true"
-                    width="auto"
+                    fetchFormat="auto"
                     crop="scale"
                     publicId={image.provider_metadata.public_id} 
                     alt={image.alternativeText}

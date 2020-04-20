@@ -10,7 +10,6 @@ import ARTICLES_QUERY from "../../apollo/queries/article/articles";
 import ARTICLE_QUERY from "../../apollo/queries/article/article";
 import { Markdown } from 'react-showdown';
 import ArticleAuthor from '../../components/data-display/ArticleAuthor';
-import HeroBlog from '../../components/section/HeroBlog';
 import Layout from '../../components/global/Layout'
 import Footer from '../../components/navigation/Footer';
 
@@ -46,12 +45,6 @@ const Article = ({ article, navigation }) => {
             }
           ]
         }}
-      />
-      <HeroBlog 
-        article={article}
-        navbar={navigation.navbar}
-        color="transparent"
-        space="default"
       />
       <Layout
         color="secondary"
