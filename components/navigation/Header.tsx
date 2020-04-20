@@ -1,7 +1,8 @@
 import React from 'react';
-import Logo from '../global/Logo'
-import Nav from './Nav'
-import styled from 'styled-components'
+import Link from 'next/link';
+import Logo from '../global/Logo';
+import Nav from './Nav';
+import styled from 'styled-components';
 
 const HeaderGroup = styled.header`
   @media only screen and (min-width: 768px) { 
@@ -32,9 +33,11 @@ type HeaderProps = {
 const Header = ({ navbar }: HeaderProps) => {
   return (     
     <HeaderGroup >
-      <a href="/" >
-        <Logo />
-      </a>
+      <Link href="/">
+        <a>
+          <Logo />
+        </a>
+      </Link>
       <Nav
         navbar={navbar}
         showNav
