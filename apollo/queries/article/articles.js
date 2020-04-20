@@ -6,6 +6,22 @@ const ARTICLES_QUERY = gql`
       navbar
       footer
     }
+    blog {
+      content {
+        __typename
+        ...on ComponentSectionHero { 
+          image {
+            provider_metadata
+            alternativeText
+          }
+          title
+          layout {
+            color
+            space
+          }
+        }
+      }
+    }
     articles(sort: "published_at:desc") {
       slug
       title

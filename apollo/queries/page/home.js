@@ -9,10 +9,10 @@ const HOME_QUERY = gql`
     home{
       content {
         __typename
-        ... on ComponentHero {
+        ... on ComponentSectionHero {
           heroTitle: title
           image {
-            url
+            alternativeText
             provider_metadata
           }
           layout {
@@ -20,7 +20,7 @@ const HOME_QUERY = gql`
             space
           }
         }
-        ... on ComponentTextGrid {
+        ... on ComponentSectionTextGrid {
           title
           textCard {
             title
@@ -39,7 +39,7 @@ const HOME_QUERY = gql`
             }
           }
         }
-        ... on ComponentCustomersList {
+        ... on ComponentSectionCustomersList {
           title
           customer {
             logo {
@@ -51,7 +51,7 @@ const HOME_QUERY = gql`
             space
           }
         }
-        ... on ComponentToolsList {
+        ... on ComponentSectionToolsList {
           title
           tool {
             name
@@ -64,7 +64,7 @@ const HOME_QUERY = gql`
             space
           }
         }
-        ... on ComponentCta {
+        ... on ComponentSectionCta {
           id
           ctaTitle: title
           button {
@@ -84,7 +84,7 @@ const HOME_QUERY = gql`
             size
           }
         }
-        ... on ComponentTestimonialsSlider {
+        ... on ComponentSectionTestimonialsSlider {
           testimonials {
             name
             avatar {

@@ -7,6 +7,12 @@ import { position, layout, background } from 'styled-system';
 import {Image, Transformation, CloudinaryContext} from 'cloudinary-react';
 import AOS from 'aos';
 
+const ImageGroup = styled.div`
+  img {
+    width: 100%
+  }
+`
+
 const Shape = styled.div`
   ${layout}
   ${position}
@@ -31,8 +37,8 @@ const ShapeAvatar = styled.div`
 type HeroProps = { 
   title: string;
   image: {
-    url: string;
     provider_metadata: any;
+    alternativeText: string;
   }
   navbar: any;
   color: string;
@@ -92,14 +98,18 @@ class Hero extends React.Component<HeroProps> {
                 />
               </div>
               <ShapeAvatar data-aos='zoom-out' data-aos-duration="2000">
-                <Image 
-                  cloudName="angulaire" 
-                  publicId={image.provider_metadata.public_id} 
-                  crop="scale" 
-                  alt="Jonathan Nabais, CEO @Angulaire"
-                  responsive
-                  width="auto"
-                />
+                <ImageGroup>
+                  <Image 
+                    cloudName="angulaire"
+                    dpr="auto"
+                    responsive
+                    responsiveUseBreakpoints="true"
+                    width="auto"
+                    crop="scale"
+                    publicId={image.provider_metadata.public_id} 
+                    alt={image.alternativeText}
+                  />
+                </ImageGroup>
               </ShapeAvatar>
             </Col>
           </Row>

@@ -26,7 +26,7 @@ const IndexPage = ({ home, navigation }) => {
   return (
     <>
       {home.content.map((section, i) => {
-        if ( section.__typename === "ComponentHero") {
+        if ( section.__typename === "ComponentSectionHero") {
           return (
             <Hero
               key={i}
@@ -38,7 +38,7 @@ const IndexPage = ({ home, navigation }) => {
             />
           )
         }
-        if ( section.__typename === "ComponentToolsList") {
+        if ( section.__typename === "ComponentSectionToolsList") {
           return (
             <Tools
               key={i}
@@ -49,7 +49,7 @@ const IndexPage = ({ home, navigation }) => {
             />
           )
         }
-        if ( section.__typename === "ComponentCustomersList") {
+        if ( section.__typename === "ComponentSectionCustomersList") {
           return (
             <Customers 
               key={i} 
@@ -60,7 +60,7 @@ const IndexPage = ({ home, navigation }) => {
             />
           )
         }
-        if ( section.__typename === "ComponentTextGrid") {
+        if ( section.__typename === "ComponentSectionTextGrid") {
           return (
             <TextGrid
               key={i} 
@@ -72,7 +72,7 @@ const IndexPage = ({ home, navigation }) => {
             />
           )
         }
-        if ( section.__typename === "ComponentTestimonialsSlider") {
+        if ( section.__typename === "ComponentSectionTestimonialsSlider") {
           return (
             <Testimonials
               key={i} 
@@ -82,7 +82,7 @@ const IndexPage = ({ home, navigation }) => {
             />
           )
         }
-        if ( section.__typename === "ComponentCta") {
+        if ( section.__typename === "ComponentSectionCta") {
           return (
             <CTA 
               key={i} 
