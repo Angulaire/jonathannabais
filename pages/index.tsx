@@ -86,11 +86,11 @@ const IndexPage = ({ home, navigation }) => {
           return (
             <CTA 
               key={i} 
-              title={section.ctaTitle}
-              button={section.button}
-              color={section.layout.color}
-              space={section.layout.space}
-              shapes={section.shape}
+              title={section.cta.ctaTitle}
+              buttons={section.cta.buttons}
+              color={section.cta.layout.color}
+              space={section.cta.layout.space}
+              shapes={section.cta.shapes}
             />
           )
         }

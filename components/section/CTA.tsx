@@ -19,13 +19,13 @@ const StyledTitle = styled.h2`
 
 type CtaProps = {
   title: string;
-  button: any;
+  buttons: any;
   color: string;
   space: string;
   shapes: any;
 }
 
-const CTA = ({ title, button, color, space, shapes }: CtaProps) => {
+const CTA = ({ title, buttons, color, space, shapes }: CtaProps) => {
   return (
     <section>
       <Layout
@@ -35,7 +35,9 @@ const CTA = ({ title, button, color, space, shapes }: CtaProps) => {
         <Row justify="start" align="middle">
           <Col xs={24} md={24}>
             <StyledTitle>{title}</StyledTitle>
-            <Link href={button.href}>{button.text}</Link>
+            {buttons.map(button =>
+              <Link href={button.href}>{button.text}</Link>
+            )}
           </Col>
         </Row>
         <Shapes shapes={shapes}/>

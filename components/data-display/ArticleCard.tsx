@@ -1,22 +1,33 @@
 import React from 'react'
 import { Row, Col, Tag } from 'antd'
-import styled from 'styled-components'
+import { ClockCircleOutlined } from '@ant-design/icons'
+import styled from 'styled-components';
 import Link from 'next/link'
+import readingTime from 'reading-time';
+
+const options = { year: 'numeric', month: 'short', day: 'numeric' };
 
 const CardGroup = styled.article`
-  margin: 2rem;
+  h3 {
+    margin: 10px 0 24px;
+  }
+  a {
+    color: ${props => props.theme.colors.secondary.text};
+  }
+`
 
-  h2 {
-    font-size: 21px;
-    margin: 20px 0;
-  }
+const Footer = styled(Row)`
+  border-top: 1px solid #D8D8D8;
+  padding-top: 12px;
   p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-bottom: 0;
   }
+  .anticon {
+    margin-top : 4px;
+  }
+`
+const StyledCol = styled(Col)`
+  border-right: 2px solid ${props => props.theme.colors.secondary.text}; 
 `
 
 type ArticleCardProps = { 
@@ -29,8 +40,20 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
       <Link href={'/blog/[id]'} as={`/blog/${article.slug}`}>
         <a>
           <Tag color={article.category.color}>{article.category.name}</Tag>
-          <h2>{article.title}</h2>
+          <h3>{article.title}</h3>
           <p>{article.description}</p>
+          <Footer justify="start" align="middle">
+            <Col span={2}>
+              <ClockCircleOutlined style={{fontSize: "17px"}}/>
+            </Col>
+            <StyledCol span={6}>
+              <p>{Math.round(readingTime(article.content).minutes)} min</p>
+            </StyledCol>
+            <Col span={12} offset={2}>
+              <p>{new Date(article.published_at).toLocaleDateString('fr-FR', options)}</p>
+            </Col>
+          </Footer>
+
         </a>
       </Link>
     </CardGroup>

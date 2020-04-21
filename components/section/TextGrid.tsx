@@ -1,7 +1,7 @@
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
-import Layout from '../global/Layout'
-import Shapes from '../global/Shapes'
+import Layout from '../global/Layout';
+import Shapes from '../global/Shapes';
 
 const TextCard = styled.div`
   .number {
@@ -29,7 +29,7 @@ const defaultProps = {
 const TextGrid = ({ title, textCards, color, space, shapes }: TextGridProps) => {
 
   return (
-    <section>
+    <section id={title}>
       <Layout 
         color={color} 
         space={space}

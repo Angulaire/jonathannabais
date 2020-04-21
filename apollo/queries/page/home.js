@@ -66,22 +66,24 @@ const HOME_QUERY = gql`
         }
         ... on ComponentSectionCta {
           id
-          ctaTitle: title
-          button {
-            text
-            type
-            href
-          }
-          layout {
-            color
-            space
-          }
-          shape {
-            image {
-              url
+          cta {
+            ctaTitle: title
+            buttons {
+              text
+              type
+              href
             }
-            position
-            size
+            layout {
+              color
+              space
+            }
+            shapes {
+              image {
+                url
+              }
+              position
+              size
+            }
           }
         }
         ... on ComponentSectionTestimonialsSlider {

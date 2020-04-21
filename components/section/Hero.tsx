@@ -5,6 +5,8 @@ import Header from '../navigation/Header';
 import styled from 'styled-components';
 import { position, layout, background } from 'styled-system';
 import {Image, Transformation, CloudinaryContext} from 'cloudinary-react';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { ArrowDownOutlined } from '@ant-design/icons';
 import AOS from 'aos';
 
 const ImageGroup = styled.div`
@@ -23,15 +25,17 @@ const Shape = styled.div`
 `
 
 const HeroBg = styled.div`
-  background: url(https://res.cloudinary.com/angulaire/image/upload/f_auto/v1586182535/suhg8eda7lfcztwpy71x.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  ${background}
 `
 
 const ShapeAvatar = styled.div`
   position: relative;
+`
+
+const ArrowLink = styled(Link)`
+  position: absolute;
+  bottom: 70px;
+  left: 140px;
 `
 
 type HeroProps = { 
@@ -54,7 +58,12 @@ class Hero extends React.Component<HeroProps> {
   render() {
     const { title, image, navbar, color, space } = this.props
     return (
-      <HeroBg>
+      <HeroBg
+        backgroundImage="url(https://res.cloudinary.com/angulaire/image/upload/f_auto/v1586182535/suhg8eda7lfcztwpy71x.png)"
+        backgroundPosition="center center"
+        backgroundSize="cover"
+        backgroundRepeat="no-repeat"
+      >
         <Header
           navbar={navbar}
         />
@@ -114,6 +123,9 @@ class Hero extends React.Component<HeroProps> {
               </ShapeAvatar>
             </Col>
           </Row>
+          <ArrowLink to="Mon quotidien" smooth={true} offset={50} duration={500}>
+            <ArrowDownOutlined style={{ fontSize: '24px', color: "white" }}/>
+          </ArrowLink>
         </Layout>
       </HeroBg>
     )

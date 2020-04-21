@@ -14,10 +14,41 @@ const ARTICLES_QUERY = gql`
             provider_metadata
             alternativeText
           }
+          backgroundImage {
+            url
+          }
           title
           layout {
             color
             space
+          }
+        }
+        ... on ComponentSectionBlogGrid { 
+        	layout {
+            color
+            space
+          }
+        }
+        ... on ComponentSectionCta {
+          id
+          cta {
+            ctaTitle: title
+            buttons {
+              text
+              type
+              href
+            }
+            layout {
+              color
+              space
+            }
+            shapes {
+              image {
+                url
+              }
+              position
+              size
+            }
           }
         }
       }
