@@ -64,12 +64,6 @@ const ARTICLES_QUERY = gql`
       }
       user {
         username
-        avatar {
-          alt
-          media {
-            url
-          }
-        }
       }
       content {
         ... on ComponentSectionRichText {

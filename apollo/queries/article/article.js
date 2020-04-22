@@ -18,16 +18,39 @@ const ARTICLE_QUERY = gql`
       }
       user {
         username
+        bio
         avatar {
-          alt
-          media {
-            url
-          }
+          provider_metadata
+          alternativeText
         }
       }
       content {
+        __typename
         ... on ComponentSectionRichText {
           body
+          signature
+        }
+        ... on ComponentSectionCta {
+          id
+          cta {
+            ctaTitle: title
+            buttons {
+              text
+              type
+              href
+            }
+            layout {
+              color
+              space
+            }
+            shapes {
+              image {
+                url
+              }
+              position
+              size
+            }
+          }
         }
       }
     }

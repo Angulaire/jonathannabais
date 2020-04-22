@@ -1,21 +1,16 @@
 import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { useRouter } from "next/router";
 import { print } from 'graphql/language/printer';
 import { request } from 'graphql-request'
 import { NextSeo } from 'next-seo';
-import { Row, Col, Button, Tag, Avatar} from 'antd';
-import styled from 'styled-components';
 import ARTICLES_QUERY from "../../apollo/queries/article/articles";
 import ARTICLE_QUERY from "../../apollo/queries/article/article";
-import { Markdown } from 'react-showdown';
-import ArticleAuthor from '../../components/data-display/ArticleAuthor';
-import Layout from '../../components/global/Layout'
 import Footer from '../../components/navigation/Footer';
 import HeroArticle from '../../components/section/HeroArticle';
+import CTA from '../../components/section/CTA'
+import ArticleText from '../../components/section/ArticleText';
 
 const Article = ({ article, navigation }) => {
-  const router = useRouter();
 
   return (
     <>
@@ -69,15 +64,29 @@ const Article = ({ article, navigation }) => {
           }
         ]}
       />
-      <Layout
-        color="secondary"
-        space="marginLeft"
-      >
-        <Row justify="center" align="top">
-          <Col xs={24} md={20}>
-          </Col>
-        </Row>
-      </Layout>
+      {article.content.map((section, i) => {
+        if ( section.__typename === "ComponentSectionRichText") {
+          return (
+            <ArticleText 
+              body={section.body}
+              signature={section.signature}
+              author={article.user}
+            />
+          )
+        }
+        if ( section.__typename === "ComponentSectionCta") {
+          return (
+            <CTA 
+              key={i} 
+              title={section.cta.ctaTitle}
+              buttons={section.cta.buttons}
+              color={section.cta.layout.color}
+              space={section.cta.layout.space}
+              shapes={section.cta.shapes}
+            />
+          )
+        }
+      })}
       <Footer 
         navigation={navigation.footer}
       />
