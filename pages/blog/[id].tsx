@@ -12,6 +12,7 @@ import { Markdown } from 'react-showdown';
 import ArticleAuthor from '../../components/data-display/ArticleAuthor';
 import Layout from '../../components/global/Layout'
 import Footer from '../../components/navigation/Footer';
+import HeroArticle from '../../components/section/HeroArticle';
 
 const Article = ({ article, navigation }) => {
   const router = useRouter();
@@ -32,7 +33,7 @@ const Article = ({ article, navigation }) => {
             modifiedTime: '2018-01-21T18:04:43Z',
             expirationTime: '2022-12-21T22:04:11Z',
             authors: [
-              `https://www.kernn.io/authors/jonathan-nabais`,
+              `https://jonathannabais.fr/authors/jonathan-nabais`,
             ],
             tags: [article.category.name]
           },
@@ -46,14 +47,34 @@ const Article = ({ article, navigation }) => {
           ]
         }}
       />
+      <HeroArticle
+        navbar={navigation.navbar}
+        article={article}
+        color="transparent"
+        space="default"
+        backgroundImageUrl="https://res.cloudinary.com/angulaire/image/upload/v1586182535/suhg8eda7lfcztwpy71x.png"
+        shapes={[
+          {
+            image: {
+              url: "https://res.cloudinary.com/angulaire/image/upload/v1584704992/ejubj9tphjkd1tah0zvl.svg"
+            },
+            position: {
+              bottom: ["0", "20px"],
+              right: ["-60px", "-80px"]
+            },
+            size: {
+              height: ["92px", "196px"],
+              width: ["262px", "562px"]
+            }
+          }
+        ]}
+      />
       <Layout
         color="secondary"
         space="marginLeft"
       >
         <Row justify="center" align="top">
           <Col xs={24} md={20}>
-            {/* <ArticleAuthor article={article} /> */}
-            <Markdown markup={article.content} />
           </Col>
         </Row>
       </Layout>

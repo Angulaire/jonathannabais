@@ -5,7 +5,7 @@ import { request } from 'graphql-request'
 import ARTICLES_QUERY from "../../apollo/queries/article/articles";
 import Header from "../../components/navigation/Header";
 import Footer from "../../components/navigation/Footer";
-import HeroBlog from '../../components/section/HeroBlog';
+import Hero from '../../components/section/Hero';
 import ArticlesGrid from '../../components/section/ArticlesGrid';
 import CTA from '../../components/section/CTA'
 
@@ -17,7 +17,7 @@ const BlogIndex = ({ blog, articles, navigation }) => {
         if ( section.__typename === "ComponentSectionHero") {
           return (
             <>
-            <HeroBlog
+            <Hero
               key={i}
               navbar={navigation.navbar}
               title={section.title}
@@ -25,6 +25,7 @@ const BlogIndex = ({ blog, articles, navigation }) => {
               color={section.layout.color}
               space={section.layout.space}
               backgroundImage={section.backgroundImage}
+              scrollId="ArticlesGrid"
             />
             </>
           )

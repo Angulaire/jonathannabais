@@ -15,9 +15,20 @@ const HOME_QUERY = gql`
             alternativeText
             provider_metadata
           }
+          backgroundImage {
+            url
+          }
           layout {
             color
             space
+          }
+          shapes {
+            image {
+              url
+            }
+            size
+            position
+            animation
           }
         }
         ... on ComponentSectionTextGrid {

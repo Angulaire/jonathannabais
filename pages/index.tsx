@@ -35,6 +35,9 @@ const IndexPage = ({ home, navigation }) => {
               navbar={navigation.navbar}
               color={section.layout.color}
               space={section.layout.space}
+              shapes={section.shapes}
+              backgroundImage={section.backgroundImage}
+              scrollId="Mon quotidien"
             />
           )
         }

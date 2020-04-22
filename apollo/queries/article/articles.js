@@ -58,7 +58,6 @@ const ARTICLES_QUERY = gql`
       title
       description
       published_at
-      content
       category {
         name
         color
@@ -70,6 +69,11 @@ const ARTICLES_QUERY = gql`
           media {
             url
           }
+        }
+      }
+      content {
+        ... on ComponentSectionRichText {
+          body
         }
       }
     }
