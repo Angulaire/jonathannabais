@@ -25,7 +25,7 @@ const Sitemap = styled.ul`
   padding: 0;
   li {
     margin-right: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
 `
 

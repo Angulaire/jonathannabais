@@ -9,6 +9,7 @@ import Footer from '../../components/navigation/Footer';
 import HeroArticle from '../../components/section/HeroArticle';
 import CTA from '../../components/section/CTA'
 import ArticleText from '../../components/section/ArticleText';
+import ArticlesCarousel from '../../components/section/ArtclesCarousel';
 
 const Article = ({ article, navigation }) => {
 
@@ -34,7 +35,7 @@ const Article = ({ article, navigation }) => {
           },
           images: [
             {
-              url: `https://res.cloudinary.com/angulaire/image/upload/c_scale,h_630,w_1200/`,
+              url: 'https://res.cloudinary.com/angulaire/image/upload/c_scale,h_630,w_1200/',
               alt: article.title,
               width: 1200,
               height: 630,
@@ -51,15 +52,15 @@ const Article = ({ article, navigation }) => {
         shapes={[
           {
             image: {
-              url: "https://res.cloudinary.com/angulaire/image/upload/v1584704992/ejubj9tphjkd1tah0zvl.svg"
+              url: "https://res.cloudinary.com/angulaire/image/upload/v1588580900/green-dots-rectangle-6-shape_8dfbf1af5d.svg"
             },
             position: {
-              bottom: ["0", "20px"],
-              right: ["-60px", "-80px"]
+              bottom: ["0", "120px"],
+              right: ["0", "-45px"]
             },
             size: {
-              height: ["92px", "196px"],
-              width: ["262px", "562px"]
+              height: ["60px", "80px"],
+              width: ["245px", "265px"]
             }
           }
         ]}
@@ -83,6 +84,19 @@ const Article = ({ article, navigation }) => {
               color={section.cta.layout.color}
               space={section.cta.layout.space}
               shapes={section.cta.shapes}
+            />
+          )
+        }
+        if ( section.__typename === "ComponentSectionRelatedArticles") {
+          return (
+            <ArticlesCarousel
+              color={section.layout.color}
+              space={{
+                p: ["40px 20px", "80px 140px 80px 70px"],
+                ml: ["0", "70px"],
+                mt: ["20px", "80px"]
+              }}
+              articles={section.collection.articles}
             />
           )
         }

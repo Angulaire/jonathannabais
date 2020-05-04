@@ -30,6 +30,32 @@ const ARTICLE_QUERY = gql`
           body
           signature
         }
+        ... on ComponentSectionRelatedArticles {
+          layout {
+            color
+            space
+          }
+          collection {
+            articles {
+              slug
+              title
+              description
+              published_at
+              category {
+                name
+                color
+              }
+              user {
+                username
+              }
+              content {
+                ... on ComponentSectionRichText {
+                  body
+                }
+              }
+            }
+          }
+        }
         ... on ComponentSectionCta {
           id
           cta {

@@ -40,6 +40,7 @@ export default class MyDocument extends Document {
           <link rel="manifest" href="/favicon/site.webmanifest"/>
           <meta name="theme-color" content="#FFF"/>
           <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+          <meta name="google-site-verification" content="Yy13w6murVGkskMeSWWCfc8RsHfvxibRsvA4hhWhdfo" />
         </Head>
         <body>
           <Main />
