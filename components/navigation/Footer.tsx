@@ -1,9 +1,9 @@
 import { Row, Col } from 'antd';
 import { TwitterCircleFilled, LinkedinFilled } from '@ant-design/icons';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const FooterGroup = styled.footer`
-  background: ${props => props.theme.bg.matt};
+  background: #06205C;
   a {
     color: white;
   }

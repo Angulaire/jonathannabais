@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Tag } from 'antd'
 import { ClockCircleOutlined } from '@ant-design/icons'
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Link from 'next/link'
 import readingTime from 'reading-time';
 
@@ -12,7 +12,7 @@ const CardGroup = styled.article`
     margin: 10px 0 24px;
   }
   a {
-    color: ${props => props.theme.colors.secondary.text};
+    color: black;
   }
 `
 
@@ -27,7 +27,7 @@ const Footer = styled(Row)`
   }
 `
 const StyledCol = styled(Col)`
-  border-right: 2px solid ${props => props.theme.colors.secondary.text}; 
+  border-right: 2px solid black; 
 `
 
 type ArticleCardProps = { 

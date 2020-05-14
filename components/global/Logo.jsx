@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 const LogoMode = styled.svg`
   @media only screen and (min-width: 768px) { 

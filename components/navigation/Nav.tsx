@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from 'antd'
 import Link from "next/link"
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 const NavGroup = styled.nav`
   justify-content: right;

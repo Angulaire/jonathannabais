@@ -1,5 +1,5 @@
 import { Row, Col, Button } from 'antd';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Layout from '../global/Layout'
 
 const ToolCard = styled.div`

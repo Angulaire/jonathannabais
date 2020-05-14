@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Logo from '../global/Logo';
 import Nav from './Nav';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const HeaderGroup = styled.header`
   @media only screen and (min-width: 768px) { 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Button, Carousel } from 'antd';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Layout from '../global/Layout';
 import TestimonialCard from '../data-display/TestimonialCard';
 
@@ -12,15 +12,11 @@ const StyledCarousel = styled(Carousel)`
     padding-inline-start: 0;
     margin: 20px 0 !important;
     button {
-      background: ${props => props.theme.colors.primary.bg} !important;
+      background: #06205C !important;
     }
   }
   img {
     margin: 40px 0;
-  }
-
-  p {
-    color: ${props => props.theme.colors.secondary.text};
   }
 
   .quote {

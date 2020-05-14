@@ -6,7 +6,6 @@ import { print } from 'graphql/language/printer';
 import { request } from 'graphql-request'
 import Header from '../components/navigation/Header';
 import Footer from '../components/navigation/Footer';
-import Loading from '../components/global/Loading'
 import Hero from '../components/section/Hero';
 import CTA from '../components/section/CTA';
 import Customers from '../components/section/Customers';
@@ -16,12 +15,6 @@ import Tools from '../components/section/Tools';
 
 const IndexPage = ({ home, navigation }) => {
   const router = useRouter()
-
-  // If the page is not yet generated, this will be displayed
-  // initially until getStaticProps() finishes running
-  if (router.isFallback) {
-    return <Loading/>
-  }
 
   return (
     <>

@@ -3,35 +3,27 @@ import App from 'next/app';
 import TagManager from 'react-gtm-module';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config'
-import Providers from '../components/global/Providers';
-import { ApolloProvider } from "@apollo/react-hooks";  
-import { ApolloClient, NormalizedCacheObject } from "apollo-boost";
-import withData from "../utils/apollo";
+import { ThemeProvider } from 'theme-ui';
+import theme from '../components/global/theme';
 
 const tagManagerArgs = {
   gtmId: 'GTM-MBFH9W2'
 }
 
-interface IProps {
-  apollo: ApolloClient<NormalizedCacheObject>;
-}
-
-class MyApp extends App<IProps> {
+class MyApp extends App {
   componentDidMount () {
     TagManager.initialize(tagManagerArgs)
   }
 
   render() {
-    const { Component, pageProps, apollo } = this.props
+    const { Component, pageProps } = this.props
     return (
-      <ApolloProvider client={apollo}>
+      <ThemeProvider theme={theme}>
         <DefaultSeo {...SEO} />
-        <Providers>
-          <Component {...pageProps} />
-        </Providers>
-      </ApolloProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     )
   }
 }
 
-export default withData(MyApp)
+export default MyApp

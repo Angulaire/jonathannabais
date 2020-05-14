@@ -1,10 +1,10 @@
 import { Row, Col, Button } from 'antd';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Layout from '../global/Layout'
 import Shapes from '../global/Shapes'
 
 const Link = styled.a`
-  color: ${props => props.theme.colors.secondary.text};
+  color: black;
   font-size: 26px;
   text-decoration: underline;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import Layout from '../global/Layout'
 import Header from '../navigation/Header';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { position, layout, background } from 'styled-system';
 import { Image } from 'cloudinary-react';
 import Shapes from '../global/Shapes'

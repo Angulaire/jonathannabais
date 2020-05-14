@@ -2,7 +2,7 @@ import { Row, Col, Button } from 'antd';
 import Layout from '../global/Layout';
 import { Markdown } from 'react-showdown';
 import { Image, Transformation } from 'cloudinary-react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 const ImageGroup = styled.div`
   img {

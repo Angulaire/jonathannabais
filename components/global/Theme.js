@@ -1,116 +1,76 @@
-import { createGlobalStyle } from 'styled-components'
-
-const baseColors = {
-  blue: '#06205C',
-  white: '#FFF',
-  black: '#000',
-  greyLight: '#29282E',
-  grey: '#29282E',
-  greyDark: '#29282E',
-}
-
-export const lightTheme = {
-  colors: {
-    primary: {
-      bg: baseColors.blue,
-      text: baseColors.white
-    },
-    secondary: {
-      bg: baseColors.white,
-      text: baseColors.blue
-    },
-    black: baseColors.black,
-    white: baseColors.white
+export default {
+  fonts: {
+    body: 'Averta, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: 'inherit',
   },
-  // TO DELETE
-  bg: {
-    primary: '#06205C',
-    secondary: '#FFF'
+  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontWeights: {
+    body: 400,
+    heading: 700,
+    bold: 700,
+  },
+  lineHeights: {
+    body: 1.5,
+    heading: 1.125,
+  },
+  colors: {
+    blue: '#06205C',
+    white: '#FFF',
+    black: '#000',
+    greyLight: '#29282E',
+    grey: '#29282E',
+    greyDark: '#29282E',
   },
   text: {
-    primary: '#FFF',
-    secondary: '#06205C'
+    heading: {
+      fontFamily: 'heading',
+      lineHeight: 'heading',
+      fontWeight: 'heading',
+    },
   },
-  // ...
+  styles: {
+    root: {
+      fontFamily: 'body',
+      lineHeight: 'body',
+      fontWeight: 'body',
+      fontFeatureSettings: 'normal',
+      fontVariant: 'normal',
+      '-webkit-font-smoothing': 'antialiased',
+      backgroundColor: 'blue',
+      color: 'white',
+      '@font-face': {
+        fontFamily: 'Averta',
+        src: 'url(/fonts/Averta.woff)',
+      },
+      'h1': {
+        fontSize: ['46px', '48px'],
+        textAlign: ['center', 'left'],
+        width: ['100%', '85%'],
+        letterSpacing: '-2.5px',
+        lineHeight: '58px',
+        margin: '50px 0'
+      },
+      'h2': {
+        fontSize: ['40px', '56px'],
+        lineHeight: ['48px', '1'],
+        letterSpacing: '-3px',
+        marginBottom: '70px'
+      },
+      'h3': {
+        fontSize: '24px'
+      },
+      'h1, h2, h3, h4, h5, h6': {
+        color: 'white'
+      },
+      'p': {
+        color: 'blue',
+        fontSize: '17px',
+        lineHeight: '28px',
+        marginBottom: '1rem'
+      },
+      '*:focus': {
+        outline: 'none'
+      }
+    },
+  }
 }
-
-export const darkTheme = {
-  // bg: {
-  // },
-  // text: {
-  // }
-}
-
-export const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: Averta;
-    src: url(/fonts/Averta-Bold.woff);
-    font-weight: bold;
-  }
-
-  @font-face {
-    font-family: Averta;
-    src: url(/fonts/Averta-Light.woff);
-    font-weight: 200;
-  }
-
-  @font-face {
-    font-family: Averta;
-    src: url(/fonts/Averta.woff);
-    font-weight: normal;
-  }
-  
-  body {
-    font-family: Averta;
-    font-feature-settings: normal;
-    font-variant: normal;
-    -webkit-font-smoothing: antialiased;
-		background-color: ${props => props.theme.colors.primary.bg};
-  }
-
-	h1 {
-    @media only screen and (min-width: 768px) { 
-      font-size: 48px;
-      text-align: left;
-      width: 85%;
-    }
-    font-size: 46px;
-    letter-spacing: -2.5px;
-    text-align: center;
-    line-height: 58px;
-    margin: 50px 0;
-    width: 100%;
-  }
-
-  h2 {
-    @media only screen and (min-width: 768px) {
-      font-size: 56px;
-      line-height: 1;
-    }
-    letter-spacing: -3px;
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 70px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    color: ${props => props.theme.colors.primary.text};
-  }
-	
-	p {
-		color: ${props => props.theme.colors.grey};
-		font-size: 17px;
-		font-weight: normal;
-		line-height: 28px;
-    margin-bottom: 1rem;
-	}
-	
-	*:focus {
-		outline:none
-  }
-  
-`

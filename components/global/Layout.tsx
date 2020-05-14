@@ -1,6 +1,5 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { variant, space, typography, position, layout, background } from 'styled-system';
-
 
 const LayoutGroup = styled('div')(
   space,
@@ -12,17 +11,17 @@ const LayoutGroup = styled('div')(
     prop: 'color',
     variants: {
       primary: {
-        color: 'primary.text',
-        bg: 'primary.bg',
+        color: 'white',
+        bg: 'blue',
         'h2, h3': {
-          color: 'primary.text',
+          color: 'white',
         }
       },
       secondary: {
-        color: 'secondary.text',
-        bg: 'secondary.bg',
+        color: 'blue',
+        bg: 'white',
         'h2, h3': {
-          color: 'secondary.text',
+          color: 'blue',
         }
       },
       transparent: {

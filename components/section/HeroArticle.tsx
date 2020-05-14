@@ -4,7 +4,7 @@ import { ClockCircleOutlined } from '@ant-design/icons';
 import Header from '../navigation/Header'
 import Layout from '../global/Layout'
 import Shapes from '../global/Shapes'
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { background } from 'styled-system';
 import readingTime from 'reading-time';
 
@@ -29,7 +29,7 @@ const Infos = styled(Row)`
   }
   .time {
     padding-right: 20px;
-    border-right: 2px solid ${props => props.theme.colors.primary.text}; 
+    border-right: 2px solid white; 
   }
   .date {
     padding-left: 20px;

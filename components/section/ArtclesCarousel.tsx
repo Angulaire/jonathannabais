@@ -1,5 +1,4 @@
 import { Row, Col } from 'antd'
-import styled from 'styled-components'
 import Layout from '../../components/global/Layout'
 import ArticleCard from '../../components/data-display/ArticleCard'
 
