@@ -112,12 +112,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const endpoint = `${process.env.API_BASE_URL}/graphql`
   const query = print(ARTICLES_QUERY)
   // Call an external API endpoint to get articles
-  const data = await request(endpoint, query)
+  const data: any = await request(endpoint, query)
   const articles = await data.articles
 
-
   // Get the paths we want to pre-render based on articles
-  const paths = articles.map((article: any) => `/blog/${article.slug}`)
+  const paths = articles.map(article => `/blog/${article.slug}`)
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
   return { paths, fallback: false }
@@ -130,7 +129,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const variables = {
     slug: params.id,
   }
-  const data = await request(endpoint, query, variables)
+  const data: any = await request(endpoint, query, variables)
   const article = await data.articles[0]
   const navigation = await data.navigation
 

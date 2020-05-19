@@ -139,7 +139,7 @@ const CONTACT_QUERY = gql`
 `;
 
 export const getStaticProps: GetStaticProps = async context => {
-  const data = await request(`${process.env.API_BASE_URL}/graphql`, print(CONTACT_QUERY))
+  const data: any = await request(`${process.env.API_BASE_URL}/graphql`, print(CONTACT_QUERY))
   const navigation = await data.navigation
   return { props: { navigation } }
 }

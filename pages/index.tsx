@@ -99,7 +99,7 @@ const IndexPage = ({ home, navigation }) => {
 }
 
 export const getStaticProps: GetStaticProps = async context => {
-  const data = await request(`${process.env.API_BASE_URL}/graphql`, print(HOME_QUERY))
+  const data: any = await request(`${process.env.API_BASE_URL}/graphql`, print(HOME_QUERY))
   const home = await data.home
   const navigation = await data.navigation
   return { props: { home, navigation } }
