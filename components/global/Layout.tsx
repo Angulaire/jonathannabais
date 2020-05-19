@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import styled from '@emotion/styled';
 import { variant, space, typography, position, layout, background } from 'styled-system';
 
@@ -13,20 +15,23 @@ const LayoutGroup = styled('div')(
       primary: {
         color: 'white',
         bg: 'blue',
-        'h2, h3': {
+        'h1, h2, h3, h4, h5, h6, p': {
           color: 'white',
         }
       },
       secondary: {
         color: 'blue',
         bg: 'white',
-        'h2, h3': {
+        'h1, h2, h3, h4, h5, h6, p': {
           color: 'blue',
         }
       },
       transparent: {
-        color: 'primary.text',
+        color: 'white',
         bg: 'transparent',
+        'h1, h2, h3, h4, h5, h6, p': {
+          color: 'white',
+        }
       },
     },
   }),
@@ -51,8 +56,10 @@ const defaultProps = {
 
 const Layout = ({ children, color, space, textAlign, background }) => {
   return (
-    <LayoutGroup 
-      position="relative"
+    <LayoutGroup
+      sx={{
+        position: 'relative'
+      }}
       color={color}
       space={space}
       m={space?.m}

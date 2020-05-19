@@ -2,7 +2,8 @@
   "build": {
     "env": {
       "API_BASE_URL": "@api_base_url",
-      "CLOUDINARY_CLOUD_NAME": "@cloudinary_cloud_name"
+      "CLOUDINARY_CLOUD_NAME": "@cloudinary_cloud_name",
+      "SENDGRID_API_KEY": "@sendgrid_api_key"
     }
   },
   "routes": [

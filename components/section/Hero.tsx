@@ -17,15 +17,6 @@ const ImageGroup = styled.div`
   }
 `
 
-const Shape = styled.div`
-  ${layout}
-  ${position}
-  ${background}
-  display: block;
-  background-repeat: no-repeat;
-  background-size: contain;
-`
-
 const HeroBg = styled.div`
   ${background}
 `

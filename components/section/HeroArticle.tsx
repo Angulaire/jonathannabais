@@ -1,4 +1,5 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx, Grid, Button} from 'theme-ui';
 import { Row, Col, Tag } from 'antd';
 import { ClockCircleOutlined } from '@ant-design/icons';
 import Header from '../navigation/Header'
@@ -9,10 +10,6 @@ import { background } from 'styled-system';
 import readingTime from 'reading-time';
 
 const options = { year: 'numeric', month: 'short', day: 'numeric' };
-
-const HeroBg = styled.div`
-  ${background}
-`
 
 const Infos = styled(Row)`
   p {
@@ -52,12 +49,13 @@ const defaultProps = {
 const HeroArticle = ({ navbar, article, backgroundImageUrl, color, space, shapes }: HeroArticleProps) => {
 
   return (
-    <HeroBg
-      backgroundImage={`url(${backgroundImageUrl})`}
-      backgroundPosition="center center"
-      backgroundSize="cover"
-      backgroundRepeat="no-repeat"
-    >
+    <div
+      sx={{
+        backgroundImage: `url(${backgroundImageUrl})`,
+        backgroundPosition: 'center center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}>
       <Header
         navbar={navbar}
       />
@@ -79,7 +77,7 @@ const HeroArticle = ({ navbar, article, backgroundImageUrl, color, space, shapes
         </Row>
       </Layout>
       <Shapes shapes={shapes}/>
-    </HeroBg>
+    </div>
   )
 }
 
