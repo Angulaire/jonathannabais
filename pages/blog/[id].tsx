@@ -115,8 +115,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const data = await request(endpoint, query)
   const articles = await data.articles
 
+
   // Get the paths we want to pre-render based on articles
-  const paths = articles.map(article => `/blog/${article.slug}`)
+  const paths = articles.map((article: any) => `/blog/${article.slug}`)
   // We'll pre-render only these paths at build time.
   // { fallback: false } means other routes should 404.
   return { paths, fallback: false }

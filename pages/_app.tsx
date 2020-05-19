@@ -4,7 +4,7 @@ import TagManager from 'react-gtm-module';
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config'
 import { ThemeProvider } from 'theme-ui';
-import theme from '../components/global/theme';
+import theme from '../theme';
 
 const tagManagerArgs = {
   gtmId: 'GTM-MBFH9W2'
