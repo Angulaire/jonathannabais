@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_section_ctas",
+  "info": {
+    "name": "CTA",
+    "icon": "fire"
+  },
+  "options": {},
+  "attributes": {
+    "cta": {
+      "model": "cta"
+    }
+  }
+}

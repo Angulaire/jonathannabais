@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "components_nested_buttons",
+  "info": {
+    "name": "button",
+    "icon": "hand-point-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "link",
+        "danger"
+      ],
+      "default": "primary"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_section_related_articles",
+  "info": {
+    "name": "Related Articles",
+    "icon": "calendar-plus"
+  },
+  "options": {},
+  "attributes": {
+    "collection": {
+      "model": "collection"
+    },
+    "title": {
+      "type": "string",
+      "required": false,
+      "default": "Ces articles vous seront utiles"
+    },
+    "layout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.layout"
+    }
+  }
+}

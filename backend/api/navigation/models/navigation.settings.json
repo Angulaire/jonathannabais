@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "navigations",
+  "info": {
+    "name": "Navigation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "footer": {
+      "type": "json"
+    },
+    "navbar": {
+      "type": "json"
+    }
+  }
+}

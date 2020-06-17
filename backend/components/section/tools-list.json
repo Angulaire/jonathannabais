@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "components_section_tools",
+  "info": {
+    "name": "Tools",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tool": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-display.tool"
+    },
+    "layout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.layout"
+    }
+  }
+}

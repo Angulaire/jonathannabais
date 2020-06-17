@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "components_section_text_grids",
+  "info": {
+    "name": "Text Grid",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "textCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-display.text-card"
+    },
+    "layout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.layout"
+    },
+    "shapes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.shape"
+    }
+  }
+}

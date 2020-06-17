@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "components_nested_customers",
+  "info": {
+    "name": "customer",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "components_nested_layouts",
+  "info": {
+    "name": "layout",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "transparent"
+      ],
+      "default": "primary",
+      "required": true
+    },
+    "space": {
+      "type": "json",
+      "default": {
+        "p": [
+          "40px 20px",
+          "80px 140px"
+        ]
+      }
+    }
+  }
+}

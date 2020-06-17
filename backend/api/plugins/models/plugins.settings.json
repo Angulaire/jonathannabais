@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "plugins",
+  "info": {
+    "name": "Plugins"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "gtm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "plugin.google-tag-manager"
+    }
+  }
+}

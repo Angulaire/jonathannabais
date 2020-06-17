@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "connection": "default",
+  "collectionName": "homes",
+  "info": {
+    "name": "home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "section.tools-list",
+        "section.customers-list",
+        "section.text-grid",
+        "section.hero",
+        "section.testimonials-slider",
+        "section.cta"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "components_nested_testimonials",
+  "info": {
+    "name": "testimonial",
+    "icon": "comment-alt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "testimonial": {
+      "type": "text"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "compagnyName": {
+      "type": "string"
+    },
+    "compagnyLogo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "compagnyColor": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "components_section_heroes",
+  "info": {
+    "name": "Hero",
+    "icon": "camera"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "layout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.layout"
+    },
+    "title": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "shapes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.shape"
+    }
+  }
+}

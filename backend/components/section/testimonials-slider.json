@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "components_section_testimonials_sliders",
+  "info": {
+    "name": "Testimonials Slider",
+    "icon": "comment"
+  },
+  "options": {},
+  "attributes": {
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-display.testimonial"
+    },
+    "layout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.layout"
+    }
+  }
+}

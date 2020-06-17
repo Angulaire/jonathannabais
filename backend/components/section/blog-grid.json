@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_section_blog_grids",
+  "info": {
+    "name": "Blog Grid",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "layout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.layout"
+    }
+  }
+}

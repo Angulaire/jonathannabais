@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "components_plugin_google_tag_managers",
+  "info": {
+    "name": "Google Tag Manager",
+    "icon": "puzzle-piece"
+  },
+  "options": {},
+  "attributes": {
+    "gtmId": {
+      "type": "string",
+      "required": true,
+      "default": "GTM-XXXXXXX"
+    }
+  }
+}

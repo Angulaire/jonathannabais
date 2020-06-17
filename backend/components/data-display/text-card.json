@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_nested_text_cards",
+  "info": {
+    "name": "Text Card",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    }
+  }
+}

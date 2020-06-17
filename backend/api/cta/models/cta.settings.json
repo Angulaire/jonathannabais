@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ctas",
+  "info": {
+    "name": "CTA"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.layout"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.button"
+    },
+    "shapes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.shape"
+    }
+  }
+}

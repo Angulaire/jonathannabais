@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "components_section_customers_list",
+  "info": {
+    "name": "Customers",
+    "icon": "arrow-alt-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "customer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data-display.customer"
+    },
+    "layout": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.layout"
+    }
+  }
+}
