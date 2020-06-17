@@ -39,10 +39,5 @@ module.exports = withLess(withFonts(withImages({
       })
     }
     return config
-  },
-  env: {
-    API_BASE_URL: process.env.API_BASE_URL,
-    CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
-    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
   }
 })))
