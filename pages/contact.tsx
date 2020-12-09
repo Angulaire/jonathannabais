@@ -91,10 +91,11 @@ const Contact = ({ navigation }) => {
                   <a href="https://goo.gl/maps/RCPedZdy1Lwk9qNr8">28 rue Feydeau, 75002 Paris</a>
                 </div>
               </div>
-              <Button sx={{ variant: 'primary', width: '100%' }}>
-                Réserver un créneau
-              </Button>
-
+              <a href="https://calendly.com/angulaire/30min" target="_blank" rel="noopener noreferrer">
+                <Button sx={{ variant: 'primary', width: '100%' }}>
+                  Réserver un créneau
+                </Button>
+              </a>
             </div>
             <div
               sx={{

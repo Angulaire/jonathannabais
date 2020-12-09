@@ -6,10 +6,15 @@ export default async function(req, res) {
   const { email, firstName, lastName, object, message } = req.body
 
   const content = {
-    to: 'arnaud@angulaire.io',
-    from: 'arnaud@angulaire.io',
+    to: 'jonathan@angulaire.io',
+    from: 'jonathan@angulaire.io',
     subject: `${firstName} ${lastName}: Contact Site Perso`,
-    html: `<p>${message}</p>`
+    html: `
+      <p>Name: ${firstName} ${lastName}</p>
+      <p>Email: ${email}</p>
+      <p>Object: ${object}</p>
+      <p>Message: ${message}</p>
+    `
   }
 
   try {

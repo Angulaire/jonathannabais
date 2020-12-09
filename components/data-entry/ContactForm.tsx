@@ -113,11 +113,10 @@ const ContactForm = () => {
             name="object"
           >
             <Select placeholder="Selectioner un motif">
-              <Option value="jack">Business</Option>
-              <Option value="lucy">Date</Option>
+              <Option value="business">Business</Option>
+              <Option value="date">Date</Option>
             </Select>
           </Form.Item>
-
           <Form.Item
             label="Message"
             name="message"
