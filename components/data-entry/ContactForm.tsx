@@ -4,7 +4,6 @@ import { Form, Input, Select, Result } from 'antd';
 import { MailOutlined } from '@ant-design/icons';
 import React, { useState } from 'react';
 
-const { Option } = Select;
 const { TextArea } = Input;
 
 const ContactForm = () => {
@@ -32,7 +31,7 @@ const ContactForm = () => {
   
   const onFinish = async values => {
     console.log('Success:', values);
-    const res = await fetch('/api/send', {
+    const res = await fetch('/api/activecampaign', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -77,7 +76,6 @@ const ContactForm = () => {
             >
               <Input placeholder="Neil"/>
             </Form.Item>
-
             <Form.Item
               label="Nom"
               name="lastName"
@@ -107,15 +105,6 @@ const ContactForm = () => {
             ]}
           >
             <Input addonBefore={<MailOutlined />} placeholder="neil@angulaire.io" />
-          </Form.Item>
-          <Form.Item
-            label="Motif"
-            name="object"
-          >
-            <Select placeholder="Selectioner un motif">
-              <Option value="business">Business</Option>
-              <Option value="date">Date</Option>
-            </Select>
           </Form.Item>
           <Form.Item
             label="Message"

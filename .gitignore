@@ -10,3 +10,4 @@ yarn.lock
 !/yarn.lock
 test/node_modules
 .now
+.vercel

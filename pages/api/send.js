@@ -6,7 +6,7 @@ export default async function(req, res) {
   const { email, firstName, lastName, object, message } = req.body
 
   const content = {
-    to: 'jonathan@angulaire.io',
+    to: 'arnaud@angulaire.io',
     from: 'jonathan@angulaire.io',
     subject: `${firstName} ${lastName}: Contact Site Perso`,
     html: `
